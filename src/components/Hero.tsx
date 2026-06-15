@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import Image from "next/image";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import MagneticButton from "./MagneticButton";
@@ -149,14 +148,19 @@ export default function Hero() {
       />
 
       <div className="absolute inset-0 z-[1]">
-        <Image
-          src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80"
-          alt="Modern corporate office architecture"
-          fill
-          className="object-cover opacity-20"
-          priority
-          sizes="100vw"
-        />
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover opacity-30"
+          poster="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80"
+        >
+          <source
+            src="https://cdn.coverr.co/videos/coverr-focused-working-space-1555/v65H01vk1GfqzHg2BDKSlmDOaPsUhhQuP.mp4"
+            type="video/mp4"
+          />
+        </video>
       </div>
 
       <div
@@ -181,7 +185,7 @@ export default function Hero() {
         </div>
 
         <div ref={textRef}>
-          <h1 className="hero-line text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[1.05] tracking-tight text-white mb-6 max-w-4xl mx-auto">
+          <h1 className="hero-line text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight text-white mb-6 max-w-4xl mx-auto">
             Revenue Infrastructure{" "}
             <span className="text-gradient">Built for</span>
             <br />
