@@ -121,3 +121,9 @@ body {
     background-size: 40px 40px;
   }
 }
+
+html:not(.js) [style*="opacity: 0"],
+html:not(.js) [style*="opacity:0"] {
+  opacity: 1 !important;
+  transform: none !important;
+}
