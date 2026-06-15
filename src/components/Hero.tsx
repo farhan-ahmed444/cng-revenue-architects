@@ -157,7 +157,7 @@ export default function Hero() {
           poster="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80"
         >
           <source
-            src="https://cdn.coverr.co/videos/coverr-focused-working-space-1555/v65H01vk1GfqzHg2BDKSlmDOaPsUhhQuP.mp4"
+            src="https://cdn.coverr.co/videos/coverr-houston-skyscrapers-9179/1080p.mp4"
             type="video/mp4"
           />
         </video>
