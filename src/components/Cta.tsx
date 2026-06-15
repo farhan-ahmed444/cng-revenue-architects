@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import MagneticButton from "./MagneticButton";
@@ -40,6 +41,16 @@ export default function Cta() {
       ref={sectionRef}
       className="relative py-24 lg:py-32 overflow-hidden bg-bg-secondary"
     >
+      <div className="absolute inset-0">
+        <Image
+          src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80"
+          alt="Modern corporate headquarters"
+          fill
+          className="object-cover opacity-10"
+          sizes="100vw"
+        />
+      </div>
+
       <div className="absolute inset-0 grid-pattern opacity-10" />
 
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-accent-gold/5 blur-[150px]" />

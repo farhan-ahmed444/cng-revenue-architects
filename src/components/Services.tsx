@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { motion } from "framer-motion";
@@ -111,6 +112,15 @@ export default function Services() {
       ref={sectionRef}
       className="relative py-24 lg:py-32 overflow-hidden"
     >
+      <div className="absolute inset-0">
+        <Image
+          src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&q=80"
+          alt="Digital network visualization"
+          fill
+          className="object-cover opacity-[0.03]"
+          sizes="100vw"
+        />
+      </div>
       <div className="absolute inset-0 grid-pattern opacity-10" />
       <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-accent-gold/20 to-transparent" />
 

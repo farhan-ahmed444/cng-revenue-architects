@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import MagneticButton from "./MagneticButton";
@@ -147,12 +148,23 @@ export default function Hero() {
         className="absolute inset-0 z-0"
       />
 
+      <div className="absolute inset-0 z-[1]">
+        <Image
+          src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80"
+          alt="Modern corporate office architecture"
+          fill
+          className="object-cover opacity-20"
+          priority
+          sizes="100vw"
+        />
+      </div>
+
       <div
         ref={gridRef}
-        className="absolute inset-0 z-[1] opacity-30 grid-pattern animate-grid-scroll"
+        className="absolute inset-0 z-[2] opacity-30 grid-pattern animate-grid-scroll"
       />
 
-      <div className="absolute inset-0 z-[2] bg-gradient-to-b from-transparent via-bg-primary/20 to-bg-primary" />
+      <div className="absolute inset-0 z-[3] bg-gradient-to-b from-bg-primary/70 via-bg-primary/30 to-bg-primary" />
 
       <div className="absolute top-1/4 left-1/3 w-96 h-96 rounded-full bg-accent-gold/5 blur-[120px]" />
       <div className="absolute bottom-1/4 right-1/4 w-64 h-64 rounded-full bg-accent-amber/5 blur-[100px]" />

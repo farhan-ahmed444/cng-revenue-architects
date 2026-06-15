@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { motion } from "framer-motion";
@@ -49,6 +50,15 @@ export default function About() {
       ref={sectionRef}
       className="relative py-24 lg:py-32 overflow-hidden"
     >
+      <div className="absolute inset-0">
+        <Image
+          src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=1920&q=80"
+          alt="Corporate strategy meeting"
+          fill
+          className="object-cover opacity-[0.04]"
+          sizes="100vw"
+        />
+      </div>
       <div className="absolute inset-0 grid-pattern opacity-20" />
       <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-accent-gold/[0.02] to-transparent" />
 
