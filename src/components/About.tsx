@@ -5,7 +5,7 @@ import Image from "next/image";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { motion } from "framer-motion";
-import { ArrowRight, Target, TrendingUp, Layers } from "lucide-react";
+import { ArrowRight, Target, TrendingUp, Layers, Quote } from "lucide-react";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -54,19 +54,28 @@ export default function About() {
           src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=1920&q=80"
           alt="Corporate strategy meeting"
           fill
-          className="object-cover opacity-[0.04]"
+          className="object-cover opacity-[0.12]"
           sizes="100vw"
         />
       </div>
-      <div className="absolute inset-0 grid-pattern opacity-20" />
-      <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-accent-gold/[0.02] to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-r from-bg-primary via-bg-primary/95 to-bg-primary/80" />
+      <div className="absolute inset-0 grid-pattern opacity-15" />
+
+      <div className="absolute top-0 right-0 w-[40%] h-full">
+        <div className="absolute inset-0 bg-gradient-to-l from-accent-gold/[0.04] to-transparent" />
+      </div>
+
+      <div className="absolute top-20 right-10 w-72 h-72 rounded-full bg-accent-gold/[0.03] blur-[100px]" />
+      <div className="absolute bottom-20 left-10 w-96 h-96 rounded-full bg-accent-amber/[0.02] blur-[120px]" />
+
+      <div className="absolute top-0 left-1/2 w-px h-full bg-gradient-to-b from-transparent via-accent-gold/10 to-transparent hidden lg:block" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
         <div className="about-label text-accent-gold text-xs tracking-[0.25em] uppercase mb-4 font-medium">
           About the Firm
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-start">
           <div ref={textRef} className="space-y-6">
             <h2 className="about-heading text-3xl sm:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-tight text-white">
               We Architect the Commercial{" "}
@@ -106,39 +115,49 @@ export default function About() {
           </div>
 
           <div className="relative">
-            <div className="relative p-8 rounded-2xl glass-light overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-br from-accent-gold/[0.03] to-transparent" />
+            <div className="absolute -top-4 -left-4 w-20 h-20 border border-accent-gold/20 rounded-full" />
+            <div className="absolute -bottom-4 -right-4 w-32 h-32 border border-accent-gold/10 rounded-full" />
 
-              <div className="relative z-10 grid grid-cols-1 gap-4">
-                {metrics.map((m, i) => {
-                  const Icon = m.icon;
-                  return (
-                    <motion.div
-                      key={m.label}
-                      initial={{ opacity: 0, x: 40 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ delay: i * 0.15, duration: 0.6 }}
-                      className="flex items-center gap-5 p-5 rounded-xl bg-white/[0.03] border border-white/[0.06] hover:border-accent-gold/20 transition-all duration-500 group"
-                    >
-                      <div className="w-12 h-12 rounded-lg gold-gradient/10 bg-accent-gold/10 flex items-center justify-center shrink-0 group-hover:bg-accent-gold/20 transition-colors duration-300">
-                        <Icon size={20} className="text-accent-gold" />
-                      </div>
-                      <div>
-                        <div className="text-2xl font-bold text-white">
-                          {m.value}
+            <div className="relative p-8 rounded-2xl bg-gradient-to-br from-white/[0.04] to-white/[0.01] border border-white/[0.08] backdrop-blur-xl overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-accent-gold/[0.04] via-transparent to-transparent" />
+              <div className="absolute top-0 right-0 w-40 h-40 bg-accent-gold/[0.03] blur-[60px] rounded-full" />
+
+              <div className="relative z-10">
+                <div className="flex items-center gap-2 mb-6">
+                  <Quote size={14} className="text-accent-gold/40" />
+                  <span className="text-[10px] tracking-[0.3em] uppercase text-text-secondary/40 font-medium">
+                    By the Numbers
+                  </span>
+                </div>
+
+                <div className="grid grid-cols-1 gap-3">
+                  {metrics.map((m, i) => {
+                    const Icon = m.icon;
+                    return (
+                      <motion.div
+                        key={m.label}
+                        initial={{ opacity: 0, x: 40 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: i * 0.15, duration: 0.6 }}
+                        className="flex items-center gap-5 p-5 rounded-xl bg-white/[0.03] border border-white/[0.06] hover:border-accent-gold/30 hover:bg-white/[0.05] transition-all duration-500 group"
+                      >
+                        <div className="w-12 h-12 rounded-lg bg-accent-gold/10 flex items-center justify-center shrink-0 group-hover:bg-accent-gold/20 transition-colors duration-300">
+                          <Icon size={20} className="text-accent-gold" />
                         </div>
-                        <div className="text-xs text-text-secondary/60 tracking-wide uppercase">
-                          {m.label}
+                        <div>
+                          <div className="text-2xl font-bold text-white">
+                            {m.value}
+                          </div>
+                          <div className="text-xs text-text-secondary/60 tracking-wide uppercase">
+                            {m.label}
+                          </div>
                         </div>
-                      </div>
-                    </motion.div>
-                  );
-                })}
+                      </motion.div>
+                    );
+                  })}
+                </div>
               </div>
-
-              <div className="absolute -bottom-6 -right-6 w-32 h-32 border border-accent-gold/10 rounded-full" />
-              <div className="absolute -top-4 -left-4 w-20 h-20 border border-white/5 rounded-full" />
             </div>
           </div>
         </div>
