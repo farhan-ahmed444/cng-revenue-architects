@@ -191,15 +191,15 @@ export default function Hero() {
             <br />
             Predictable Growth
           </h1>
-          <p className="hero-line text-sm sm:text-base text-text-secondary/50 tracking-widest uppercase mb-3 font-medium">
+          <p className="hero-line text-sm sm:text-base text-text-secondary/80 tracking-widest uppercase mb-3 font-medium">
             We Build the Engine! You Drive Revenue!
           </p>
-          <p className="hero-line text-base sm:text-lg md:text-xl text-text-secondary/90 max-w-2xl mx-auto leading-relaxed mb-6">
+          <p className="hero-line text-base sm:text-lg md:text-xl text-text-secondary max-w-2xl mx-auto leading-relaxed mb-6">
             We design, engineer, and optimize enterprises to drive revenue.
           </p>
 
           <div className="hero-line flex items-center justify-center gap-2 mb-6">
-            <span className="text-xs sm:text-sm tracking-[0.2em] uppercase text-text-secondary/60 font-medium">
+            <span className="text-xs sm:text-sm tracking-[0.2em] uppercase text-text-secondary/80 font-medium">
               The 3P<span className="formula-s">s</span> Formula&trade;
             </span>
           </div>
@@ -208,7 +208,7 @@ export default function Hero() {
             {["Passion", "Expertise", "Prosperity", "Stewardship"].map((item, i) => (
               <span
                 key={item}
-                className="text-xs sm:text-sm tracking-wide text-text-secondary/40 font-light"
+                className="text-xs sm:text-sm tracking-wide text-text-secondary/60 font-light"
               >
                 {i > 0 && (
                   <span className="mr-2 sm:mr-3 text-accent-gold/30">&bull;</span>

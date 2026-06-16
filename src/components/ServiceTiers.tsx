@@ -109,7 +109,7 @@ export default function ServiceTiers() {
             <span className="text-gradient">Sustainable Enterprise</span>{" "}
             Expansion
           </h2>
-          <p className="tiers-heading text-text-secondary/60 mt-4 max-w-2xl mx-auto text-sm leading-relaxed">
+          <p className="tiers-heading text-text-secondary/80 mt-4 max-w-2xl mx-auto text-sm leading-relaxed">
             Every engagement is bespoke &mdash; calibrated to your current
             growth phase and designed to accelerate your journey to the next
             stage of enterprise value.
@@ -144,11 +144,11 @@ export default function ServiceTiers() {
                   </h3>
 
                   <div className="space-y-3 mb-6">
-                    <div className="text-xs tracking-wider uppercase text-text-secondary/40">
+                    <div className="text-xs tracking-wider uppercase text-text-secondary/60">
                       <span className="text-accent-gold/60">Best For:</span>{" "}
                       {tier.bestFor}
                     </div>
-                    <div className="text-xs tracking-wider uppercase text-text-secondary/40">
+                    <div className="text-xs tracking-wider uppercase text-text-secondary/60">
                       <span className="text-accent-gold/60">
                         Engagement Snapshot:
                       </span>{" "}
@@ -157,14 +157,14 @@ export default function ServiceTiers() {
                   </div>
 
                   <div className="mb-6">
-                    <div className="text-xs tracking-wider uppercase text-text-secondary/40 mb-2">
+                    <div className="text-xs tracking-wider uppercase text-text-secondary/60 mb-2">
                       Key Deliverables
                     </div>
                     <ul className="space-y-1.5">
                       {tier.deliverables.map((d) => (
                         <li
                           key={d}
-                          className="text-sm text-text-secondary/70 flex items-start gap-2"
+                          className="text-sm text-text-secondary flex items-start gap-2"
                         >
                           <span className="w-1 h-1 rounded-full bg-accent-gold/40 mt-2 shrink-0" />
                           {d}
@@ -173,7 +173,7 @@ export default function ServiceTiers() {
                     </ul>
                   </div>
 
-                  <div className="text-sm text-text-secondary/80 leading-relaxed mb-6">
+                  <div className="text-sm text-text-secondary leading-relaxed mb-6">
                     <span className="text-accent-gold/60 text-xs tracking-wider uppercase block mb-1">
                       Outcome
                     </span>
@@ -182,7 +182,7 @@ export default function ServiceTiers() {
                 </div>
 
                 <div className="relative z-10 mt-auto pt-4 border-t border-white/[0.06]">
-                  <p className="text-xs text-text-secondary/40 italic leading-relaxed">
+                  <p className="text-xs text-text-secondary/60 italic leading-relaxed">
                     {tier.footer}
                   </p>
                 </div>

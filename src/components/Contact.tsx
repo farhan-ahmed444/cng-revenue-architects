@@ -65,7 +65,7 @@ export default function Contact() {
             <span className="text-gradient">Strategic Infrastructure</span>{" "}
             Partnership
           </h2>
-          <p className="contact-heading text-text-secondary/60 mt-4 max-w-xl mx-auto text-sm">
+          <p className="contact-heading text-text-secondary/80 mt-4 max-w-xl mx-auto text-sm">
             We diagnose, architect, and align commercial infrastructure for
             expanding firms.
           </p>
@@ -81,7 +81,7 @@ export default function Contact() {
           >
             <form className="space-y-5">
               <div>
-                <label className="block text-xs tracking-wider uppercase text-text-secondary/40 mb-2">
+                <label className="block text-xs tracking-wider uppercase text-text-secondary/60 mb-2">
                   Full Name &amp; Executive Title
                 </label>
                 <input
@@ -92,7 +92,7 @@ export default function Contact() {
               </div>
 
               <div>
-                <label className="block text-xs tracking-wider uppercase text-text-secondary/40 mb-2">
+                <label className="block text-xs tracking-wider uppercase text-text-secondary/60 mb-2">
                   Enterprise Corporate Name
                 </label>
                 <input
@@ -103,7 +103,7 @@ export default function Contact() {
               </div>
 
               <div>
-                <label className="block text-xs tracking-wider uppercase text-text-secondary/40 mb-2">
+                <label className="block text-xs tracking-wider uppercase text-text-secondary/60 mb-2">
                   Corporate Email
                 </label>
                 <input
@@ -114,7 +114,7 @@ export default function Contact() {
               </div>
 
               <div>
-                <label className="block text-xs tracking-wider uppercase text-text-secondary/40 mb-2">
+                <label className="block text-xs tracking-wider uppercase text-text-secondary/60 mb-2">
                   Current Growth Phase
                 </label>
                 <select className="w-full px-4 py-3 bg-white/[0.04] border border-white/[0.08] rounded-lg text-white text-sm focus:outline-none focus:border-accent-gold/40 transition-colors duration-300 appearance-none">
@@ -134,7 +134,7 @@ export default function Contact() {
               </div>
 
               <div>
-                <label className="block text-xs tracking-wider uppercase text-text-secondary/40 mb-2">
+                <label className="block text-xs tracking-wider uppercase text-text-secondary/60 mb-2">
                   Revenue Blockage or Growth Objective
                 </label>
                 <textarea
@@ -172,7 +172,7 @@ export default function Contact() {
                   <h4 className="text-white text-sm font-semibold mb-1">
                     Address
                   </h4>
-                  <p className="text-text-secondary/60 text-sm">
+                  <p className="text-text-secondary/80 text-sm">
                     2200 Hunt St
                   </p>
                 </div>
@@ -188,7 +188,7 @@ export default function Contact() {
                   <h4 className="text-white text-sm font-semibold mb-1">
                     Phone
                   </h4>
-                  <p className="text-text-secondary/60 text-sm">
+                  <p className="text-text-secondary/80 text-sm">
                     (313) 688-0675
                   </p>
                 </div>
@@ -206,7 +206,7 @@ export default function Contact() {
                   </h4>
                   <a
                     href="mailto:acalhoun@cngrevenuearchitects.com"
-                    className="text-text-secondary/60 text-sm hover:text-accent-gold transition-colors duration-300"
+                    className="text-text-secondary/80 text-sm hover:text-accent-gold transition-colors duration-300"
                   >
                     acalhoun@cngrevenuearchitects.com
                   </a>
@@ -227,7 +227,7 @@ export default function Contact() {
                     href="https://linkedin.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-text-secondary/60 text-sm hover:text-accent-gold transition-colors duration-300"
+                    className="text-text-secondary/80 text-sm hover:text-accent-gold transition-colors duration-300"
                   >
                     Follow on LinkedIn
                   </a>

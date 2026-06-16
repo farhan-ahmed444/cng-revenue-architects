@@ -26,10 +26,10 @@ export default function Footer() {
                 CnG Revenue Architects, LLC
               </span>
             </div>
-            <p className="text-text-secondary/40 text-sm mb-2">
+            <p className="text-text-secondary/60 text-sm mb-2">
               We Build the Engine! You Drive Revenue!
             </p>
-            <p className="text-text-secondary/30 text-xs max-w-sm leading-relaxed">
+            <p className="text-text-secondary/50 text-xs max-w-sm leading-relaxed">
               Diagnosing, architecting, and aligning commercial infrastructure
               for expanding firms. Maximizing scalability, operational
               efficiency, and enterprise asset value.
@@ -45,7 +45,7 @@ export default function Footer() {
                 <li key={link.label}>
                   <button
                     onClick={() => smoothScrollTo(link.target)}
-                    className="text-text-secondary/50 text-sm hover:text-accent-gold transition-colors duration-300"
+                    className="text-text-secondary/60 text-sm hover:text-accent-gold transition-colors duration-300"
                   >
                     {link.label}
                   </button>
@@ -63,7 +63,7 @@ export default function Footer() {
                 (val) => (
                   <li
                     key={val}
-                    className="text-text-secondary/50 text-sm"
+                    className="text-text-secondary/60 text-sm"
                   >
                     {val}
                   </li>
@@ -74,7 +74,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-10 pt-8 border-t border-white/[0.06] flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-text-secondary/30 text-xs">
+          <p className="text-text-secondary/50 text-xs">
             &copy; 2026 CnG Revenue Architects, LLC. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
@@ -82,7 +82,7 @@ export default function Footer() {
               href="https://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-text-secondary/30 hover:text-accent-gold transition-colors duration-300"
+              className="text-text-secondary/50 hover:text-accent-gold transition-colors duration-300"
             >
               <LinkedInIcon size={16} />
             </a>

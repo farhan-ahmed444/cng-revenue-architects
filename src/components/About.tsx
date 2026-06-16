@@ -73,10 +73,10 @@ export default function About() {
               <span className="text-gradient">Infrastructure</span> That
               Drives Predictable Wealth
             </h2>
-            <p className="text-text-secondary/80 text-base lg:text-lg leading-relaxed">
+            <p className="text-text-secondary text-base lg:text-lg leading-relaxed">
               We design, engineer, and optimize enterprises to drive revenue.
             </p>
-            <p className="text-text-secondary/60 text-base leading-relaxed">
+            <p className="text-text-secondary/80 text-base leading-relaxed">
               At CnG Revenue Architects, LLC, we operate at the intersection of
               commercial strategy, operational architecture, and wealth science.
               Our proprietary 3Ps Revenue Matrix &mdash; a strategic framework
