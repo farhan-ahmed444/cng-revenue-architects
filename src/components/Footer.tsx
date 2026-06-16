@@ -6,13 +6,11 @@ import { smoothScrollTo } from "@/lib/utils";
 const footerLinks = [
   { label: "Home", target: "hero" },
   { label: "About", target: "about" },
-  { label: "Services", target: "services" },
-  { label: "Contact", target: "contact" },
+  { label: "Service Tiers", target: "service-tiers" },
+  { label: "Contact", target: "briefing" },
 ];
 
 export default function Footer() {
-  const year = new Date().getFullYear();
-
   return (
     <footer className="relative border-t border-white/[0.06] bg-bg-quaternary">
       <div className="absolute inset-0 grid-pattern opacity-[0.03]" />
@@ -25,11 +23,11 @@ export default function Footer() {
                 <span className="text-black font-bold text-sm">C</span>
               </div>
               <span className="text-white font-semibold text-base tracking-tight">
-                CnG Revenue Architects
+                CnG Revenue Architects, LLC
               </span>
             </div>
             <p className="text-text-secondary/40 text-sm mb-2">
-              Engineered by Us! Driven by You!
+              We Build the Engine! You Drive Revenue!
             </p>
             <p className="text-text-secondary/30 text-xs max-w-sm leading-relaxed">
               Diagnosing, architecting, and aligning commercial infrastructure
@@ -58,43 +56,26 @@ export default function Footer() {
 
           <div>
             <h4 className="text-white text-xs tracking-widest uppercase mb-4 font-medium">
-              Connect
+              Core Values
             </h4>
-            <ul className="space-y-2.5">
-              <li>
-                <a
-                  href="https://linkedin.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-text-secondary/50 text-sm hover:text-accent-gold transition-colors duration-300"
-                >
-                  <LinkedInIcon size={14} />
-                  LinkedIn
-                </a>
-              </li>
-              <li>
-                <a
-                  href="mailto:acalhoun@cngrevenuearchitects.com"
-                  className="text-text-secondary/50 text-sm hover:text-accent-gold transition-colors duration-300"
-                >
-                  Email Us
-                </a>
-              </li>
-              <li>
-                <a
-                  href="tel:+13136880675"
-                  className="text-text-secondary/50 text-sm hover:text-accent-gold transition-colors duration-300"
-                >
-                  (313) 688-0675
-                </a>
-              </li>
+            <ul className="space-y-2">
+              {["Passion", "Expertise", "Prosperity", "Stewardship"].map(
+                (val) => (
+                  <li
+                    key={val}
+                    className="text-text-secondary/50 text-sm"
+                  >
+                    {val}
+                  </li>
+                )
+              )}
             </ul>
           </div>
         </div>
 
         <div className="mt-10 pt-8 border-t border-white/[0.06] flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-text-secondary/30 text-xs">
-            &copy; {year} CnG Revenue Architects, LLC. All rights reserved.
+            &copy; 2026 CnG Revenue Architects, LLC. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
             <a

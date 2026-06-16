@@ -9,6 +9,16 @@ import LinkedInIcon from "@/components/LinkedInIcon";
 
 gsap.registerPlugin(ScrollTrigger);
 
+const growthPhases = [
+  "Seed",
+  "Early-Stage",
+  "Growth Stage",
+  "Expansion Stage",
+  "Enterprise Stage",
+  "Turnaround",
+  "Restructuring",
+];
+
 export default function Contact() {
   const sectionRef = useRef<HTMLDivElement>(null);
 
@@ -38,7 +48,7 @@ export default function Contact() {
 
   return (
     <section
-      id="contact"
+      id="briefing"
       ref={sectionRef}
       className="relative py-24 lg:py-32 overflow-hidden"
     >
@@ -48,15 +58,16 @@ export default function Contact() {
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-16">
           <div className="contact-label text-accent-gold text-xs tracking-[0.25em] uppercase mb-4 font-medium">
-            Contact Us
+            Executive Briefing
           </div>
           <h2 className="contact-heading text-3xl sm:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-tight text-white max-w-3xl mx-auto">
-            Let&apos;s Build Your{" "}
-            <span className="text-gradient">Revenue Infrastructure</span>
+            Secure Your{" "}
+            <span className="text-gradient">Strategic Infrastructure</span>{" "}
+            Partnership
           </h2>
           <p className="contact-heading text-text-secondary/60 mt-4 max-w-xl mx-auto text-sm">
-            Schedule a consultation with our team to diagnose, architect, and
-            align your commercial systems.
+            We diagnose, architect, and align commercial infrastructure for
+            expanding firms.
           </p>
         </div>
 
@@ -69,59 +80,66 @@ export default function Contact() {
             transition={{ duration: 0.6 }}
           >
             <form className="space-y-5">
-              <div className="grid sm:grid-cols-2 gap-5">
-                <div>
-                  <label className="block text-xs tracking-wider uppercase text-text-secondary/40 mb-2">
-                    Name
-                  </label>
-                  <input
-                    type="text"
-                    placeholder="Your full name"
-                    className="w-full px-4 py-3 bg-white/[0.04] border border-white/[0.08] rounded-lg text-white text-sm placeholder:text-text-secondary/20 focus:outline-none focus:border-accent-gold/40 transition-colors duration-300"
-                  />
-                </div>
-                <div>
-                  <label className="block text-xs tracking-wider uppercase text-text-secondary/40 mb-2">
-                    Company
-                  </label>
-                  <input
-                    type="text"
-                    placeholder="Your company"
-                    className="w-full px-4 py-3 bg-white/[0.04] border border-white/[0.08] rounded-lg text-white text-sm placeholder:text-text-secondary/20 focus:outline-none focus:border-accent-gold/40 transition-colors duration-300"
-                  />
-                </div>
-              </div>
-
-              <div className="grid sm:grid-cols-2 gap-5">
-                <div>
-                  <label className="block text-xs tracking-wider uppercase text-text-secondary/40 mb-2">
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    placeholder="your@email.com"
-                    className="w-full px-4 py-3 bg-white/[0.04] border border-white/[0.08] rounded-lg text-white text-sm placeholder:text-text-secondary/20 focus:outline-none focus:border-accent-gold/40 transition-colors duration-300"
-                  />
-                </div>
-                <div>
-                  <label className="block text-xs tracking-wider uppercase text-text-secondary/40 mb-2">
-                    Phone
-                  </label>
-                  <input
-                    type="tel"
-                    placeholder="(000) 000-0000"
-                    className="w-full px-4 py-3 bg-white/[0.04] border border-white/[0.08] rounded-lg text-white text-sm placeholder:text-text-secondary/20 focus:outline-none focus:border-accent-gold/40 transition-colors duration-300"
-                  />
-                </div>
+              <div>
+                <label className="block text-xs tracking-wider uppercase text-text-secondary/40 mb-2">
+                  Full Name &amp; Executive Title
+                </label>
+                <input
+                  type="text"
+                  placeholder="e.g. John Smith, CEO"
+                  className="w-full px-4 py-3 bg-white/[0.04] border border-white/[0.08] rounded-lg text-white text-sm placeholder:text-text-secondary/20 focus:outline-none focus:border-accent-gold/40 transition-colors duration-300"
+                />
               </div>
 
               <div>
                 <label className="block text-xs tracking-wider uppercase text-text-secondary/40 mb-2">
-                  Message
+                  Enterprise Corporate Name
+                </label>
+                <input
+                  type="text"
+                  placeholder="Your company name"
+                  className="w-full px-4 py-3 bg-white/[0.04] border border-white/[0.08] rounded-lg text-white text-sm placeholder:text-text-secondary/20 focus:outline-none focus:border-accent-gold/40 transition-colors duration-300"
+                />
+              </div>
+
+              <div>
+                <label className="block text-xs tracking-wider uppercase text-text-secondary/40 mb-2">
+                  Corporate Email
+                </label>
+                <input
+                  type="email"
+                  placeholder="executive@company.com"
+                  className="w-full px-4 py-3 bg-white/[0.04] border border-white/[0.08] rounded-lg text-white text-sm placeholder:text-text-secondary/20 focus:outline-none focus:border-accent-gold/40 transition-colors duration-300"
+                />
+              </div>
+
+              <div>
+                <label className="block text-xs tracking-wider uppercase text-text-secondary/40 mb-2">
+                  Current Growth Phase
+                </label>
+                <select className="w-full px-4 py-3 bg-white/[0.04] border border-white/[0.08] rounded-lg text-white text-sm focus:outline-none focus:border-accent-gold/40 transition-colors duration-300 appearance-none">
+                  <option value="" disabled selected className="bg-bg-primary">
+                    Select your growth phase
+                  </option>
+                  {growthPhases.map((phase) => (
+                    <option
+                      key={phase}
+                      value={phase}
+                      className="bg-bg-primary"
+                    >
+                      {phase}
+                    </option>
+                  ))}
+                </select>
+              </div>
+
+              <div>
+                <label className="block text-xs tracking-wider uppercase text-text-secondary/40 mb-2">
+                  Revenue Blockage or Growth Objective
                 </label>
                 <textarea
                   rows={4}
-                  placeholder="Tell us about your growth objectives..."
+                  placeholder="Describe your current revenue blockage, growth objective, or strategic challenge..."
                   className="w-full px-4 py-3 bg-white/[0.04] border border-white/[0.08] rounded-lg text-white text-sm placeholder:text-text-secondary/20 focus:outline-none focus:border-accent-gold/40 transition-colors duration-300 resize-none"
                 />
               </div>
@@ -133,7 +151,7 @@ export default function Contact() {
                 whileTap={{ scale: 0.98 }}
               >
                 <Send size={16} />
-                Send Message
+                Request Executive Briefing
               </motion.button>
             </form>
           </motion.div>

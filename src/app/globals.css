@@ -127,3 +127,11 @@ html:not(.js) [style*="opacity:0"] {
   opacity: 1 !important;
   transform: none !important;
 }
+
+.formula-s {
+  font-family: "Georgia", "Playfair Display", "Times New Roman", serif;
+  font-style: italic;
+  color: #F4C430;
+  display: inline-block;
+  transform: skewX(-5deg);
+}

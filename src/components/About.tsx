@@ -5,20 +5,19 @@ import Image from "next/image";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { motion } from "framer-motion";
-import { ArrowRight, BarChart3, Target, Layers } from "lucide-react";
+import { ArrowRight, Target, TrendingUp, Layers } from "lucide-react";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const metrics = [
   { value: "95%", label: "Client Retention", icon: Target },
-  { value: "3x", label: "Avg. Growth Acceleration", icon: BarChart3 },
-  { value: "12+", label: "Years Strategic Consulting", icon: Layers },
+  { value: "$3.2M", label: "Avg. Revenue Acceleration per Engagement", icon: TrendingUp },
+  { value: "25+", label: "Years Deploying Revenue Matrix Strategies", icon: Layers },
 ];
 
 export default function About() {
   const sectionRef = useRef<HTMLDivElement>(null);
   const textRef = useRef<HTMLDivElement>(null);
-  const vizRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -72,38 +71,37 @@ export default function About() {
             <h2 className="about-heading text-3xl sm:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-tight text-white">
               We Architect the Commercial{" "}
               <span className="text-gradient">Infrastructure</span> That
-              Accelerates Growth
+              Drives Predictable Wealth
             </h2>
             <p className="text-text-secondary/80 text-base lg:text-lg leading-relaxed">
-              CnG Revenue Architects helps organizations identify revenue
-              bottlenecks before implementing technology solutions. We believe
-              that the right commercial infrastructure precedes the right
-              technology.
+              We design, engineer, and optimize enterprises to drive revenue.
             </p>
             <p className="text-text-secondary/60 text-base leading-relaxed">
-              Our process begins by aligning Product, People, and Process —
-              the three pillars of sustainable growth. Only after this
-              foundation is established do we introduce technology to
-              accelerate and scale.
+              At CnG Revenue Architects, LLC, we operate at the intersection of
+              commercial strategy, operational architecture, and wealth science.
+              Our proprietary 3Ps Revenue Matrix &mdash; a strategic framework
+              developed over 25+ years of executive leadership &mdash; equips
+              organizations to move beyond survival mode and into scalable,
+              sustainable enterprise expansion.
             </p>
 
             <div className="pt-4">
               <motion.button
                 onClick={() => {
                   document
-                    .getElementById("contact")
+                    .getElementById("briefing")
                     ?.scrollIntoView({ behavior: "smooth" });
                 }}
                 className="group inline-flex items-center gap-2 text-accent-gold text-sm font-medium hover:gap-3 transition-all duration-300"
                 whileHover={{ x: 5 }}
               >
-                Schedule a Discovery Call
+                Request an Executive Briefing
                 <ArrowRight size={16} className="transition-transform duration-300 group-hover:translate-x-1" />
               </motion.button>
             </div>
           </div>
 
-          <div ref={vizRef} className="relative">
+          <div className="relative">
             <div className="relative p-8 rounded-2xl glass-light overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-br from-accent-gold/[0.03] to-transparent" />
 

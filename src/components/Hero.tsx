@@ -153,7 +153,7 @@ export default function Hero() {
           muted
           loop
           playsInline
-          className="absolute inset-0 w-full h-full object-cover opacity-30"
+          className="absolute inset-0 w-full h-full object-cover opacity-40"
           poster="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80"
         >
           <source
@@ -168,7 +168,7 @@ export default function Hero() {
         className="absolute inset-0 z-[2] opacity-30 grid-pattern animate-grid-scroll"
       />
 
-      <div className="absolute inset-0 z-[3] bg-gradient-to-b from-bg-primary/70 via-bg-primary/30 to-bg-primary" />
+      <div className="absolute inset-0 z-[3] bg-gradient-to-b from-bg-primary/50 via-bg-primary/20 to-bg-primary/70" />
 
       <div className="absolute top-1/4 left-1/3 w-96 h-96 rounded-full bg-accent-gold/5 blur-[120px]" />
       <div className="absolute bottom-1/4 right-1/4 w-64 h-64 rounded-full bg-accent-amber/5 blur-[100px]" />
@@ -180,7 +180,7 @@ export default function Hero() {
         <div className="hero-badge inline-flex items-center gap-2 px-4 py-2 rounded-full border border-accent-gold/20 bg-accent-gold/5 mb-8">
           <span className="w-2 h-2 rounded-full bg-accent-gold animate-pulse-glow" />
           <span className="text-accent-gold text-xs tracking-widest uppercase font-medium">
-            Revenue Architecture Consulting
+            Revenue Architecture Partners
           </span>
         </div>
 
@@ -189,42 +189,46 @@ export default function Hero() {
             Revenue Infrastructure{" "}
             <span className="text-gradient">Built for</span>
             <br />
-            Scalable Growth
+            Predictable Growth
           </h1>
-          <p className="hero-line text-base sm:text-lg md:text-xl text-text-secondary/90 max-w-2xl mx-auto leading-relaxed mb-4">
-            We diagnose, architect, and align the commercial systems that drive
-            sustainable enterprise expansion.
+          <p className="hero-line text-sm sm:text-base text-text-secondary/50 tracking-widest uppercase mb-3 font-medium">
+            We Build the Engine! You Drive Revenue!
+          </p>
+          <p className="hero-line text-base sm:text-lg md:text-xl text-text-secondary/90 max-w-2xl mx-auto leading-relaxed mb-6">
+            We design, engineer, and optimize enterprises to drive revenue.
           </p>
 
-          <div className="hero-line flex items-center justify-center gap-3 sm:gap-6 mb-8">
-            {["Product", "People", "Process"].map((item, i) => (
+          <div className="hero-line flex items-center justify-center gap-2 mb-6">
+            <span className="text-xs sm:text-sm tracking-[0.2em] uppercase text-text-secondary/60 font-medium">
+              The 3P<span className="formula-s">s</span> Formula&trade;
+            </span>
+          </div>
+
+          <div className="hero-line flex items-center justify-center gap-6 sm:gap-10 mb-8">
+            {["Passion", "Expertise", "Prosperity", "Stewardship"].map((item, i) => (
               <span
                 key={item}
-                className="text-xs sm:text-sm tracking-[0.2em] uppercase text-text-secondary/60 font-medium"
+                className="text-xs sm:text-sm tracking-wide text-text-secondary/40 font-light"
               >
                 {i > 0 && (
-                  <span className="mx-2 sm:mx-3 text-accent-gold/40">|</span>
+                  <span className="mr-2 sm:mr-3 text-accent-gold/30">&bull;</span>
                 )}
                 {item}
               </span>
             ))}
           </div>
-
-          <p className="hero-line text-sm text-text-secondary/40 mb-10 max-w-md mx-auto">
-            Three pillars. One integrated growth architecture.
-          </p>
         </div>
 
         <div className="hero-cta flex flex-col sm:flex-row items-center justify-center gap-4">
           <MagneticButton
-            onClick={() => smoothScrollTo("contact")}
+            onClick={() => smoothScrollTo("briefing")}
             variant="primary"
             className="text-base px-8 py-4"
           >
-            Schedule a Consultation
+            Request an Executive Briefing
           </MagneticButton>
           <MagneticButton
-            onClick={() => smoothScrollTo("3ps")}
+            onClick={() => smoothScrollTo("service-tiers")}
             variant="secondary"
             className="text-base px-8 py-4"
           >

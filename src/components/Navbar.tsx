@@ -6,13 +6,13 @@ import { Menu, X } from "lucide-react";
 import LinkedInIcon from "@/components/LinkedInIcon";
 import { smoothScrollTo } from "@/lib/utils";
 
-const sections = ["Home", "About", "Services", "Contact"];
+const sections = ["Home", "About", "Service Tiers", "Contact"];
 
 const sectionIds: Record<string, string> = {
   Home: "hero",
   About: "about",
-  Services: "services",
-  Contact: "contact",
+  "Service Tiers": "service-tiers",
+  Contact: "briefing",
 };
 
 export default function Navbar() {
@@ -100,7 +100,7 @@ export default function Navbar() {
                 onClick={() => handleNav("Contact")}
                 className="gold-gradient text-black text-sm font-semibold px-5 py-2 rounded-lg hover:shadow-lg hover:shadow-amber-500/20 transition-all duration-300"
               >
-                Schedule a Consultation
+                Request an Executive Briefing
               </button>
             </div>
 

@@ -3,16 +3,10 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import dynamic from "next/dynamic";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import TrustBar from "@/components/TrustBar";
 import About from "@/components/About";
-import ThreePs from "@/components/ThreePs";
-import Services from "@/components/Services";
-import WhyCng from "@/components/WhyCng";
-import ExecutionFramework from "@/components/ExecutionFramework";
-import Cta from "@/components/Cta";
+import ServiceTiers from "@/components/ServiceTiers";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import ScrollProgress from "@/components/ScrollProgress";
@@ -42,13 +36,8 @@ export default function Home() {
         <ScrollProgress />
         <Navbar />
         <Hero />
-        <TrustBar />
         <About />
-        <ThreePs />
-        <Services />
-        <WhyCng />
-        <ExecutionFramework />
-        <Cta />
+        <ServiceTiers />
         <Contact />
         <Footer />
       </div>
