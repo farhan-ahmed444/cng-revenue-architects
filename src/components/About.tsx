@@ -11,8 +11,8 @@ gsap.registerPlugin(ScrollTrigger);
 
 const metrics = [
   { value: "95%", label: "Client Retention", icon: Target },
-  { value: "$3.2M", label: "Avg. Revenue Acceleration per Engagement", icon: TrendingUp },
-  { value: "25+", label: "Years Deploying Revenue Matrix Strategies", icon: Layers },
+  { value: "$3.2M", label: "AVG. REVENUE ACCELERATION", icon: TrendingUp },
+  { value: "25+ Years", label: "Deploying Revenue Matrix Strategies", icon: Layers },
 ];
 
 export default function About() {
@@ -74,15 +74,19 @@ export default function About() {
               Drives Predictable Wealth
             </h2>
             <p className="text-text-secondary text-base lg:text-lg leading-relaxed">
-              We design, engineer, and optimize enterprises to drive revenue.
+              CnG Revenue Architects, LLC helps enterprises identify deep
+              operational bottlenecks before engineering tailored corporate
+              solutions. We believe that a bulletproof commercial infrastructure
+              must always precede technology integration.
             </p>
             <p className="text-text-secondary/80 text-base leading-relaxed">
-              At CnG Revenue Architects, LLC, we operate at the intersection of
-              commercial strategy, operational architecture, and wealth science.
-              Our proprietary 3Ps Revenue Matrix &mdash; a strategic framework
-              developed over 25+ years of executive leadership &mdash; equips
-              organizations to move beyond survival mode and into scalable,
-              sustainable enterprise expansion.
+              Our approach is built entirely on The 3Ps Formula&trade; aligning
+              our three closed architecture modules while introducing the
+              proprietary &ldquo;s&rdquo; system upgrade to clear enterprise
+              blockages and unlock maximum high speed capacity. Only after
+              establishing this complete architectural foundation do we hand
+              over the keys. <span className="text-accent-gold">We Build the
+              Engine! You Drive Revenue!</span>
             </p>
 
             <div className="pt-4">
