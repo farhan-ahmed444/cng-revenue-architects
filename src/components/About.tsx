@@ -58,7 +58,7 @@ export default function About() {
           sizes="100vw"
         />
       </div>
-      <div className="absolute inset-0 bg-gradient-to-r from-bg-primary via-bg-primary/95 to-bg-primary/80" />
+      <div className="absolute inset-0 bg-gradient-to-b from-bg-primary/20 via-transparent to-bg-primary/10" />
       <div className="absolute inset-0 grid-pattern opacity-15" />
 
       <div className="absolute top-0 right-0 w-[40%] h-full">
