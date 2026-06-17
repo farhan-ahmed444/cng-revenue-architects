@@ -102,7 +102,7 @@ export default function Hero() {
         if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
       });
 
-      ctx.strokeStyle = "rgba(244, 196, 48, 0.06)";
+      ctx.strokeStyle = "rgba(0, 0, 0, 0.12)";
       ctx.lineWidth = 1;
       for (let i = 0; i < particles.length; i++) {
         for (let j = i + 1; j < particles.length; j++) {
@@ -121,7 +121,7 @@ export default function Hero() {
       particles.forEach((p) => {
         ctx.beginPath();
         ctx.arc(p.x, p.y, 1.5, 0, Math.PI * 2);
-        ctx.fillStyle = "rgba(244, 196, 48, 0.15)";
+        ctx.fillStyle = "rgba(244, 196, 48, 0.25)";
         ctx.fill();
       });
 
@@ -153,7 +153,7 @@ export default function Hero() {
           muted
           loop
           playsInline
-          className="absolute inset-0 w-full h-full object-cover opacity-40"
+          className="absolute inset-0 w-full h-full object-cover opacity-55"
           poster="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80"
         >
           <source
@@ -165,19 +165,19 @@ export default function Hero() {
 
       <div
         ref={gridRef}
-        className="absolute inset-0 z-[2] opacity-30 grid-pattern animate-grid-scroll"
+        className="absolute inset-0 z-[2] opacity-20 grid-pattern animate-grid-scroll"
       />
 
-      <div className="absolute inset-0 z-[3] bg-gradient-to-b from-bg-primary/50 via-bg-primary/20 to-bg-primary/70" />
+      <div className="absolute inset-0 z-[3] bg-gradient-to-b from-black/20 via-black/10 to-black/50" />
 
-      <div className="absolute top-1/4 left-1/3 w-96 h-96 rounded-full bg-accent-gold/5 blur-[120px]" />
-      <div className="absolute bottom-1/4 right-1/4 w-64 h-64 rounded-full bg-accent-amber/5 blur-[100px]" />
+      <div className="absolute top-1/4 left-1/3 w-96 h-96 rounded-full bg-accent-gold/10 blur-[120px]" />
+      <div className="absolute bottom-1/4 right-1/4 w-64 h-64 rounded-full bg-accent-amber/8 blur-[100px]" />
 
-      <div className="hero-float-1 absolute top-[20%] right-[15%] w-20 h-20 border border-accent-gold/10 rounded-lg rotate-12" />
-      <div className="hero-float-2 absolute bottom-[25%] left-[10%] w-16 h-16 border border-white/5 rounded-full" />
+      <div className="hero-float-1 absolute top-[20%] right-[15%] w-20 h-20 border border-accent-gold/20 rounded-lg rotate-12" />
+      <div className="hero-float-2 absolute bottom-[25%] left-[10%] w-16 h-16 border border-accent-gold/10 rounded-full" />
 
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
-        <div className="hero-badge inline-flex items-center gap-2 px-4 py-2 rounded-full border border-accent-gold/20 bg-accent-gold/5 mb-8">
+        <div className="hero-badge inline-flex items-center gap-2 px-4 py-2 rounded-full border border-accent-gold/30 bg-accent-gold/10 mb-8">
           <span className="w-2 h-2 rounded-full bg-accent-gold animate-pulse-glow" />
           <span className="text-accent-gold text-xs tracking-widest uppercase font-medium">
             Revenue Architecture Partners
@@ -185,22 +185,21 @@ export default function Hero() {
         </div>
 
         <div ref={textRef}>
-          <h1 className="hero-line text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight text-white mb-6 max-w-4xl mx-auto">
-            Revenue Infrastructure{" "}
-            <span className="text-gradient">Built for</span>
-            <br />
-            Predictable Growth
+          <h1 className="hero-line text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight mb-6 max-w-4xl mx-auto">
+            <span className="text-black">Revenue Infrastructure</span>{" "}
+            <span className="text-charcoal">Built for</span>{" "}
+            <span className="text-accent-gold">Predictable Growth</span>
           </h1>
-          <p className="hero-line text-sm sm:text-base text-text-secondary/80 tracking-widest uppercase mb-3 font-medium">
-            We Build the Engine! You Drive Revenue!
+          <p className="hero-line text-sm sm:text-base text-black tracking-[0.15em] uppercase mb-3 font-bold">
+            WE BUILD THE ENGINE! YOU DRIVE REVENUE!
           </p>
-          <p className="hero-line text-base sm:text-lg md:text-xl text-text-secondary max-w-2xl mx-auto leading-relaxed mb-6">
+          <p className="hero-line text-base sm:text-lg md:text-xl text-charcoal max-w-2xl mx-auto leading-relaxed mb-6">
             We design, engineer, and optimize enterprises to drive revenue.
           </p>
 
           <div className="hero-line flex items-center justify-center gap-2 mb-6">
-            <span className="text-xs sm:text-sm tracking-[0.2em] uppercase text-text-secondary/80 font-medium">
-              The 3P<span className="formula-s">s</span> Formula&trade;
+            <span className="text-xs sm:text-sm tracking-[0.2em] uppercase text-black font-bold">
+              THE 3P<span className="formula-s">s</span> FORMULA&trade;
             </span>
           </div>
 
@@ -208,10 +207,10 @@ export default function Hero() {
             {["Passion", "Expertise", "Prosperity", "Stewardship"].map((item, i) => (
               <span
                 key={item}
-                className="text-xs sm:text-sm tracking-wide text-text-secondary/60 font-light"
+                className="text-xs sm:text-sm tracking-wide text-charcoal font-bold"
               >
                 {i > 0 && (
-                  <span className="mr-2 sm:mr-3 text-accent-gold/30">&bull;</span>
+                  <span className="mr-2 sm:mr-3 text-accent-gold">&bull;</span>
                 )}
                 {item}
               </span>
@@ -229,17 +228,17 @@ export default function Hero() {
           </MagneticButton>
           <MagneticButton
             onClick={() => smoothScrollTo("service-tiers")}
-            variant="secondary"
+            variant="outline"
             className="text-base px-8 py-4"
           >
-            Explore the 3Ps Framework
+            Explore The 3Ps Formula&trade;
           </MagneticButton>
         </div>
       </div>
 
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 text-text-secondary/30">
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 text-charcoal-mid/60">
         <span className="text-[10px] tracking-widest uppercase">Scroll</span>
-        <div className="w-[1px] h-8 bg-gradient-to-b from-accent-gold/30 to-transparent" />
+        <div className="w-[1px] h-8 bg-gradient-to-b from-accent-gold/40 to-transparent" />
       </div>
     </section>
   );

@@ -10,6 +10,8 @@ const footerLinks = [
   { label: "Contact", target: "briefing" },
 ];
 
+const coreValues = ["Passion", "Expertise", "Prosperity", "Stewardship"];
+
 export default function Footer() {
   return (
     <footer className="relative border-t border-white/[0.06] bg-bg-quaternary">
@@ -22,14 +24,14 @@ export default function Footer() {
               <div className="w-8 h-8 gold-gradient rounded-lg flex items-center justify-center">
                 <span className="text-black font-bold text-sm">C</span>
               </div>
-              <span className="text-white font-semibold text-base tracking-tight">
+              <span className="text-black font-semibold text-base tracking-tight">
                 CnG Revenue Architects, LLC
               </span>
             </div>
-            <p className="text-text-secondary/60 text-sm mb-2">
-              We Build the Engine! You Drive Revenue!
+            <p className="text-accent-gold text-sm mb-2 font-bold tracking-[0.08em]">
+              WE BUILD THE ENGINE! YOU DRIVE REVENUE!
             </p>
-            <p className="text-text-secondary/50 text-xs max-w-sm leading-relaxed">
+            <p className="text-charcoal/70 text-xs max-w-sm leading-relaxed">
               Diagnosing, architecting, and aligning commercial infrastructure
               for expanding firms. Maximizing scalability, operational
               efficiency, and enterprise asset value.
@@ -37,7 +39,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-white text-xs tracking-widest uppercase mb-4 font-medium">
+            <h4 className="text-accent-gold text-xs tracking-widest uppercase mb-4 font-medium">
               Navigate
             </h4>
             <ul className="space-y-2.5">
@@ -45,7 +47,7 @@ export default function Footer() {
                 <li key={link.label}>
                   <button
                     onClick={() => smoothScrollTo(link.target)}
-                    className="text-text-secondary/60 text-sm hover:text-accent-gold transition-colors duration-300"
+                    className="text-charcoal text-sm hover:text-accent-gold transition-colors duration-300"
                   >
                     {link.label}
                   </button>
@@ -55,26 +57,24 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-white text-xs tracking-widest uppercase mb-4 font-medium">
+            <h4 className="text-accent-gold text-xs tracking-widest uppercase mb-4 font-medium">
               Core Values
             </h4>
             <ul className="space-y-2">
-              {["Passion", "Expertise", "Prosperity", "Stewardship"].map(
-                (val) => (
-                  <li
-                    key={val}
-                    className="text-text-secondary/60 text-sm"
-                  >
-                    {val}
-                  </li>
-                )
-              )}
+              {coreValues.map((val) => (
+                <li
+                  key={val}
+                  className="text-charcoal text-sm font-bold"
+                >
+                  {val}
+                </li>
+              ))}
             </ul>
           </div>
         </div>
 
         <div className="mt-10 pt-8 border-t border-white/[0.06] flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-text-secondary/50 text-xs">
+          <p className="text-charcoal/60 text-xs">
             &copy; 2026 CnG Revenue Architects, LLC. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
@@ -82,7 +82,7 @@ export default function Footer() {
               href="https://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-text-secondary/50 hover:text-accent-gold transition-colors duration-300"
+              className="text-charcoal hover:text-accent-gold transition-colors duration-300"
             >
               <LinkedInIcon size={16} />
             </a>

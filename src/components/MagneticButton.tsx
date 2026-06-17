@@ -8,7 +8,7 @@ interface Props {
   className?: string;
   href?: string;
   onClick?: () => void;
-  variant?: "primary" | "secondary" | "ghost";
+  variant?: "primary" | "secondary" | "ghost" | "outline";
 }
 
 export default function MagneticButton({
@@ -37,9 +37,11 @@ export default function MagneticButton({
     primary:
       "gold-gradient text-black font-semibold hover:shadow-lg hover:shadow-amber-500/25",
     secondary:
-      "border border-white/10 text-white hover:border-accent-gold/50 hover:text-accent-gold bg-white/5",
+      "border border-white/10 text-charcoal hover:border-accent-gold/50 hover:text-accent-gold bg-white/5",
     ghost:
-      "text-text-secondary hover:text-accent-gold",
+      "text-charcoal hover:text-accent-gold",
+    outline:
+      "border border-accent-gold/60 text-black hover:bg-accent-gold/10 hover:border-accent-gold",
   };
 
   const Tag = href ? "a" : "button";

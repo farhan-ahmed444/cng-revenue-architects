@@ -58,15 +58,15 @@ export default function About() {
           sizes="100vw"
         />
       </div>
-      <div className="absolute inset-0 bg-gradient-to-b from-bg-primary/20 via-transparent to-bg-primary/10" />
+      <div className="absolute inset-0 bg-gradient-to-b from-bg-primary/10 via-transparent to-bg-primary/10" />
       <div className="absolute inset-0 grid-pattern opacity-15" />
 
       <div className="absolute top-0 right-0 w-[40%] h-full">
         <div className="absolute inset-0 bg-gradient-to-l from-accent-gold/[0.04] to-transparent" />
       </div>
 
-      <div className="absolute top-20 right-10 w-72 h-72 rounded-full bg-accent-gold/[0.03] blur-[100px]" />
-      <div className="absolute bottom-20 left-10 w-96 h-96 rounded-full bg-accent-amber/[0.02] blur-[120px]" />
+      <div className="absolute top-20 right-10 w-72 h-72 rounded-full bg-accent-gold/[0.04] blur-[100px]" />
+      <div className="absolute bottom-20 left-10 w-96 h-96 rounded-full bg-accent-amber/[0.03] blur-[120px]" />
 
       <div className="absolute top-0 left-1/2 w-px h-full bg-gradient-to-b from-transparent via-accent-gold/10 to-transparent hidden lg:block" />
 
@@ -77,25 +77,28 @@ export default function About() {
 
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-start">
           <div ref={textRef} className="space-y-6">
-            <h2 className="about-heading text-3xl sm:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-tight text-white">
-              We Architect the Commercial{" "}
-              <span className="text-gradient">Infrastructure</span> That
-              Drives Predictable Wealth
+            <h2 className="about-heading text-3xl sm:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-tight">
+              <span className="text-charcoal">We Architect the</span>{" "}
+              <span className="text-black">Commercial Infrastructure</span>{" "}
+              <span className="text-accent-gold">That Drives Predictable Wealth</span>
             </h2>
-            <p className="text-text-secondary text-base lg:text-lg leading-relaxed">
+            <p className="text-charcoal text-base lg:text-lg leading-relaxed">
               CnG Revenue Architects, LLC helps enterprises identify deep
               operational bottlenecks before engineering tailored corporate
               solutions. We believe that a bulletproof commercial infrastructure
               must always precede technology integration.
             </p>
-            <p className="text-text-secondary/80 text-base leading-relaxed">
+            <p className="text-charcoal/80 text-base leading-relaxed">
               Our approach is built entirely on The 3Ps Formula&trade; aligning
               our three closed architecture modules while introducing the
               proprietary &ldquo;s&rdquo; system upgrade to clear enterprise
               blockages and unlock maximum high speed capacity. Only after
               establishing this complete architectural foundation do we hand
-              over the keys. <span className="text-accent-gold">We Build the
-              Engine! You Drive Revenue!</span>
+              over the keys.
+            </p>
+
+            <p className="text-black font-bold text-base tracking-[0.1em] uppercase">
+              WE BUILD THE ENGINE! YOU DRIVE REVENUE!
             </p>
 
             <div className="pt-4">
@@ -124,9 +127,9 @@ export default function About() {
 
               <div className="relative z-10">
                 <div className="flex items-center gap-2 mb-6">
-                  <Quote size={14} className="text-accent-gold/40" />
-                  <span className="text-[10px] tracking-[0.3em] uppercase text-text-secondary/40 font-medium">
-                    By the Numbers
+                  <Quote size={14} className="text-accent-gold/60" />
+                  <span className="text-[10px] tracking-[0.3em] uppercase text-charcoal font-medium">
+                    QUANTIFIABLE IMPACT
                   </span>
                 </div>
 
@@ -146,10 +149,10 @@ export default function About() {
                           <Icon size={20} className="text-accent-gold" />
                         </div>
                         <div>
-                          <div className="text-2xl font-bold text-white">
+                          <div className="text-2xl font-bold text-accent-gold">
                             {m.value}
                           </div>
-                          <div className="text-xs text-text-secondary/60 tracking-wide uppercase">
+                          <div className="text-xs text-charcoal tracking-wide uppercase">
                             {m.label}
                           </div>
                         </div>

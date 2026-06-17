@@ -10,13 +10,9 @@ import LinkedInIcon from "@/components/LinkedInIcon";
 gsap.registerPlugin(ScrollTrigger);
 
 const growthPhases = [
-  "Seed",
-  "Early-Stage",
-  "Growth Stage",
-  "Expansion Stage",
-  "Enterprise Stage",
-  "Turnaround",
-  "Restructuring",
+  "Concept / Market Entry",
+  "Active Expansion / Scaling Infrastructure",
+  "Stagnant Velocity / Hitting a Revenue Ceiling",
 ];
 
 export default function Contact() {
@@ -60,14 +56,15 @@ export default function Contact() {
           <div className="contact-label text-accent-gold text-xs tracking-[0.25em] uppercase mb-4 font-medium">
             Executive Briefing
           </div>
-          <h2 className="contact-heading text-3xl sm:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-tight text-white max-w-3xl mx-auto">
-            Secure Your{" "}
-            <span className="text-gradient">Strategic Infrastructure</span>{" "}
-            Partnership
+          <h2 className="contact-heading text-3xl sm:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-tight max-w-4xl mx-auto">
+            <span className="text-charcoal">Secure Your</span>{" "}
+            <span className="text-black">Partnership with the</span>{" "}
+            <span className="text-accent-gold">Revenue Architect</span>
           </h2>
-          <p className="contact-heading text-text-secondary/80 mt-4 max-w-xl mx-auto text-sm">
-            We diagnose, architect, and align commercial infrastructure for
-            expanding firms.
+          <p className="contact-heading text-charcoal mt-4 max-w-2xl mx-auto text-sm">
+            We diagnose, build, and align commercial infrastructure for
+            expanding firms using three execution tiers engineered with our
+            proprietary system upgrade to accelerate enterprise revenue.
           </p>
         </div>
 
@@ -81,51 +78,51 @@ export default function Contact() {
           >
             <form className="space-y-5">
               <div>
-                <label className="block text-xs tracking-wider uppercase text-text-secondary/60 mb-2">
+                <label className="block text-xs tracking-wider uppercase text-charcoal mb-2">
                   Full Name &amp; Executive Title
                 </label>
                 <input
                   type="text"
                   placeholder="e.g. John Smith, CEO"
-                  className="w-full px-4 py-3 bg-white/[0.04] border border-white/[0.08] rounded-lg text-white text-sm placeholder:text-text-secondary/20 focus:outline-none focus:border-accent-gold/40 transition-colors duration-300"
+                  className="w-full px-4 py-3 bg-white/[0.04] border border-white/[0.08] rounded-lg text-charcoal text-sm placeholder:text-charcoal-mid/40 focus:outline-none focus:border-accent-gold/40 transition-colors duration-300"
                 />
               </div>
 
               <div>
-                <label className="block text-xs tracking-wider uppercase text-text-secondary/60 mb-2">
+                <label className="block text-xs tracking-wider uppercase text-charcoal mb-2">
                   Enterprise Corporate Name
                 </label>
                 <input
                   type="text"
                   placeholder="Your company name"
-                  className="w-full px-4 py-3 bg-white/[0.04] border border-white/[0.08] rounded-lg text-white text-sm placeholder:text-text-secondary/20 focus:outline-none focus:border-accent-gold/40 transition-colors duration-300"
+                  className="w-full px-4 py-3 bg-white/[0.04] border border-white/[0.08] rounded-lg text-charcoal text-sm placeholder:text-charcoal-mid/40 focus:outline-none focus:border-accent-gold/40 transition-colors duration-300"
                 />
               </div>
 
               <div>
-                <label className="block text-xs tracking-wider uppercase text-text-secondary/60 mb-2">
+                <label className="block text-xs tracking-wider uppercase text-charcoal mb-2">
                   Corporate Email
                 </label>
                 <input
                   type="email"
                   placeholder="executive@company.com"
-                  className="w-full px-4 py-3 bg-white/[0.04] border border-white/[0.08] rounded-lg text-white text-sm placeholder:text-text-secondary/20 focus:outline-none focus:border-accent-gold/40 transition-colors duration-300"
+                  className="w-full px-4 py-3 bg-white/[0.04] border border-white/[0.08] rounded-lg text-charcoal text-sm placeholder:text-charcoal-mid/40 focus:outline-none focus:border-accent-gold/40 transition-colors duration-300"
                 />
               </div>
 
               <div>
-                <label className="block text-xs tracking-wider uppercase text-text-secondary/60 mb-2">
+                <label className="block text-xs tracking-wider uppercase text-charcoal mb-2">
                   Current Growth Phase
                 </label>
-                <select className="w-full px-4 py-3 bg-white/[0.04] border border-white/[0.08] rounded-lg text-white text-sm focus:outline-none focus:border-accent-gold/40 transition-colors duration-300 appearance-none">
-                  <option value="" disabled selected className="bg-bg-primary">
+                <select className="w-full px-4 py-3 bg-white/[0.04] border border-white/[0.08] rounded-lg text-charcoal text-sm focus:outline-none focus:border-accent-gold/40 transition-colors duration-300 appearance-none">
+                  <option value="" disabled selected className="bg-bg-primary text-charcoal-mid">
                     Select your growth phase
                   </option>
                   {growthPhases.map((phase) => (
                     <option
                       key={phase}
                       value={phase}
-                      className="bg-bg-primary"
+                      className="bg-bg-primary text-charcoal hover:text-accent-gold"
                     >
                       {phase}
                     </option>
@@ -134,13 +131,13 @@ export default function Contact() {
               </div>
 
               <div>
-                <label className="block text-xs tracking-wider uppercase text-text-secondary/60 mb-2">
+                <label className="block text-xs tracking-wider uppercase text-charcoal mb-2">
                   Revenue Blockage or Growth Objective
                 </label>
                 <textarea
                   rows={4}
                   placeholder="Describe your current revenue blockage, growth objective, or strategic challenge..."
-                  className="w-full px-4 py-3 bg-white/[0.04] border border-white/[0.08] rounded-lg text-white text-sm placeholder:text-text-secondary/20 focus:outline-none focus:border-accent-gold/40 transition-colors duration-300 resize-none"
+                  className="w-full px-4 py-3 bg-white/[0.04] border border-white/[0.08] rounded-lg text-charcoal text-sm placeholder:text-charcoal-mid/40 focus:outline-none focus:border-accent-gold/40 transition-colors duration-300 resize-none"
                 />
               </div>
 
@@ -169,10 +166,10 @@ export default function Contact() {
                   <MapPin size={18} className="text-accent-gold" />
                 </div>
                 <div>
-                  <h4 className="text-white text-sm font-semibold mb-1">
+                  <h4 className="text-charcoal text-sm font-semibold mb-1">
                     Address
                   </h4>
-                  <p className="text-text-secondary/80 text-sm">
+                  <p className="text-charcoal/70 text-sm">
                     2200 Hunt St
                   </p>
                 </div>
@@ -185,10 +182,10 @@ export default function Contact() {
                   <Phone size={18} className="text-accent-gold" />
                 </div>
                 <div>
-                  <h4 className="text-white text-sm font-semibold mb-1">
+                  <h4 className="text-charcoal text-sm font-semibold mb-1">
                     Phone
                   </h4>
-                  <p className="text-text-secondary/80 text-sm">
+                  <p className="text-charcoal/70 text-sm">
                     (313) 688-0675
                   </p>
                 </div>
@@ -201,12 +198,12 @@ export default function Contact() {
                   <Mail size={18} className="text-accent-gold" />
                 </div>
                 <div>
-                  <h4 className="text-white text-sm font-semibold mb-1">
+                  <h4 className="text-charcoal text-sm font-semibold mb-1">
                     Email
                   </h4>
                   <a
                     href="mailto:acalhoun@cngrevenuearchitects.com"
-                    className="text-text-secondary/80 text-sm hover:text-accent-gold transition-colors duration-300"
+                    className="text-charcoal/70 text-sm hover:text-accent-gold transition-colors duration-300"
                   >
                     acalhoun@cngrevenuearchitects.com
                   </a>
@@ -220,14 +217,14 @@ export default function Contact() {
                   <LinkedInIcon size={18} className="text-accent-gold" />
                 </div>
                 <div>
-                  <h4 className="text-white text-sm font-semibold mb-1">
+                  <h4 className="text-charcoal text-sm font-semibold mb-1">
                     Connect
                   </h4>
                   <a
                     href="https://linkedin.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-text-secondary/80 text-sm hover:text-accent-gold transition-colors duration-300"
+                    className="text-charcoal/70 text-sm hover:text-accent-gold transition-colors duration-300"
                   >
                     Follow on LinkedIn
                   </a>

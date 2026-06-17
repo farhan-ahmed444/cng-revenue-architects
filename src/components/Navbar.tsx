@@ -63,7 +63,7 @@ export default function Navbar() {
               <div className="w-8 h-8 gold-gradient rounded-lg flex items-center justify-center">
                 <span className="text-black font-bold text-sm">C</span>
               </div>
-              <span className="text-white font-semibold text-sm lg:text-base tracking-tight">
+              <span className="text-black font-semibold text-sm lg:text-base tracking-tight">
                 CnG<span className="text-accent-gold">_</span>
               </span>
             </button>
@@ -76,7 +76,7 @@ export default function Navbar() {
                   className={`relative text-sm tracking-wide font-medium transition-colors duration-300 ${
                     activeSection === s
                       ? "text-accent-gold"
-                      : "text-text-secondary hover:text-white"
+                      : "text-charcoal hover:text-black"
                   }`}
                 >
                   {s === "Home" ? "Home" : s}
@@ -92,7 +92,7 @@ export default function Navbar() {
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-text-secondary hover:text-accent-gold transition-colors duration-300"
+                className="text-charcoal hover:text-accent-gold transition-colors duration-300"
               >
                 <LinkedInIcon size={18} />
               </a>
@@ -106,7 +106,7 @@ export default function Navbar() {
 
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
-              className="md:hidden text-white"
+              className="md:hidden text-charcoal"
             >
               {mobileOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -130,7 +130,7 @@ export default function Navbar() {
                   className={`text-2xl font-medium transition-colors ${
                     activeSection === s
                       ? "text-accent-gold"
-                      : "text-white"
+                      : "text-charcoal"
                   }`}
                 >
                   {s}
@@ -140,7 +140,7 @@ export default function Navbar() {
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white mt-4"
+                className="text-charcoal mt-4"
               >
                 <LinkedInIcon size={28} />
               </a>

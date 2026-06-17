@@ -70,17 +70,13 @@ export default function ServiceTiers() {
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-16 lg:mb-20">
           <div className="tiers-label text-accent-gold text-xs tracking-[0.25em] uppercase mb-4 font-medium">
-            Our Engagement Models
+            THE 3P<span className="formula-s">s</span> FORMULA&trade;
           </div>
-          <h2 className="tiers-heading text-3xl sm:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-tight text-white max-w-4xl mx-auto">
-            Designed for{" "}
-            <span className="text-gradient">Sustainable Enterprise</span>{" "}
-            Expansion
+          <h2 className="tiers-heading text-3xl sm:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-tight max-w-4xl mx-auto">
+            <span className="text-black">Engineered</span>{" "}
+            <span className="text-charcoal">by Us, Driven</span>{" "}
+            <span className="text-accent-gold">by You</span>
           </h2>
-          <p className="tiers-heading text-text-secondary/80 mt-4 max-w-2xl mx-auto text-sm leading-relaxed">
-            Three execution tiers engineered alongside one proprietary system
-            upgrade to accelerate enterprise revenue.
-          </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
@@ -97,16 +93,18 @@ export default function ServiceTiers() {
               <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-br from-accent-gold/[0.03] to-transparent" />
 
               <div className="relative z-10 flex flex-col h-full">
-                <div className="text-accent-gold text-xs tracking-[0.2em] uppercase font-medium mb-1">
+                <div className="text-accent-gold/60 text-[10px] tracking-[0.25em] uppercase font-medium mb-3">
                   {tier.footer}
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-3">
-                  {tier.title}
+                <h3 className="text-xl font-bold mb-3 leading-tight">
+                  <span className="text-black">The 3P</span>
+                  <span className="formula-s">s</span>{" "}
+                  <span className="text-black">{tier.title.replace("The 3Ps ", "")}</span>
                 </h3>
-                <p className="text-text-secondary/60 text-xs tracking-wider uppercase mb-4">
+                <p className="text-accent-gold text-xs tracking-[0.2em] uppercase font-bold text-center mb-4">
                   {tier.sublabel}
                 </p>
-                <p className="text-text-secondary leading-relaxed flex-1">
+                <p className="text-charcoal leading-relaxed flex-1 text-sm">
                   {tier.body}
                 </p>
               </div>
@@ -125,7 +123,7 @@ export default function ServiceTiers() {
                 The &ldquo;s&rdquo; Factor: The Proprietary System Upgrade
               </span>
             </div>
-            <p className="text-text-secondary text-base lg:text-lg leading-relaxed mb-4">
+            <p className="text-charcoal text-base lg:text-lg leading-relaxed mb-3">
               An enterprise can have all three foundational modules built, yet
               still fail to hit full speed due to hidden backend friction. The
               &ldquo;s&rdquo; is our proprietary system upgrade. We drop in as
@@ -133,11 +131,15 @@ export default function ServiceTiers() {
               blockages, and synchronize your infrastructure for maximum revenue
               performance.
             </p>
-            <p className="text-text-secondary/60 text-xs tracking-wider leading-relaxed max-w-2xl mx-auto">
+            <p className="text-black text-xs tracking-wider leading-relaxed max-w-2xl mx-auto mb-6">
               *The full operational breakdown and mechanics of The 3Ps
               Formula&trade; are revealed exclusively during our strategic
               partnership briefing.
             </p>
+            <div className="text-lg font-bold tracking-[0.15em] uppercase">
+              <span className="text-black">WE BUILD,</span>{" "}
+              <span className="text-accent-gold">YOU DRIVE</span>
+            </div>
           </div>
         </div>
 
@@ -151,7 +153,7 @@ export default function ServiceTiers() {
             onClick={() => smoothScrollTo("briefing")}
             className="inline-flex items-center gap-2 gold-gradient text-black font-semibold px-7 py-3.5 rounded-lg text-sm hover:shadow-lg hover:shadow-amber-500/25 transition-all duration-300"
           >
-            Request a Briefing to Unlock the 3Ps Formula&trade;
+            Request a Briefing to Unlock The 3Ps Formula&trade;
             <ArrowRight size={16} />
           </button>
         </motion.div>
