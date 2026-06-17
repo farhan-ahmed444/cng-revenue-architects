@@ -63,7 +63,7 @@ export default function Navbar() {
               <div className="w-8 h-8 gold-gradient rounded-lg flex items-center justify-center">
                 <span className="text-black font-bold text-sm">C</span>
               </div>
-              <span className="text-black font-semibold text-sm lg:text-base tracking-tight">
+              <span className="text-accent-gold font-semibold text-sm lg:text-base tracking-tight">
                 CnG<span className="text-accent-gold">_</span>
               </span>
             </button>

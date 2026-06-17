@@ -83,7 +83,7 @@ export default function ServiceTiers() {
           {tiers.map((tier, idx) => (
             <motion.div
               key={tier.title}
-              className="group relative overflow-hidden rounded-2xl border border-white/[0.06] bg-white/[0.02] hover:border-accent-gold/30 transition-all duration-500 p-6 lg:p-8 flex flex-col"
+                className="group relative overflow-hidden rounded-2xl border border-white/[0.06] bg-[#222222] hover:border-accent-gold/30 transition-all duration-500 p-6 lg:p-8 flex flex-col"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -114,7 +114,7 @@ export default function ServiceTiers() {
           ))}
         </div>
 
-        <div className="mt-16 lg:mt-20 p-8 lg:p-12 rounded-2xl bg-bg-tertiary border border-white/[0.06] relative overflow-hidden">
+        <div className="mt-16 lg:mt-20 p-8 lg:p-12 rounded-2xl bg-[#1E1E1E] border border-white/[0.06] relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-r from-accent-gold/[0.02] to-transparent" />
           <div className="relative z-10 text-center max-w-4xl mx-auto">
             <div className="inline-flex items-center gap-2 mb-4">

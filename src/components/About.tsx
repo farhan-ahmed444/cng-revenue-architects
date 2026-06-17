@@ -76,7 +76,7 @@ export default function About() {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-start">
-          <div ref={textRef} className="space-y-6">
+          <div ref={textRef} className="p-8 rounded-2xl bg-[#252525] border border-white/[0.06] space-y-6">
             <h2 className="about-heading text-3xl sm:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-tight">
               <span className="text-charcoal">We Architect the</span>{" "}
               <span className="text-black">Commercial Infrastructure</span>{" "}
@@ -101,7 +101,7 @@ export default function About() {
               WE BUILD THE ENGINE! YOU DRIVE REVENUE!
             </p>
 
-            <div className="pt-4">
+            <div>
               <motion.button
                 onClick={() => {
                   document
