@@ -79,7 +79,7 @@ export default function About() {
           <div ref={textRef} className="p-8 rounded-2xl bg-[#252525] border border-white/[0.06] space-y-6">
             <h2 className="about-heading text-3xl sm:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-tight">
               <span className="text-charcoal">We Architect the</span>{" "}
-              <span className="text-black">Commercial Infrastructure</span>{" "}
+              <span className="text-black/85">Commercial Infrastructure</span>{" "}
               <span className="text-accent-gold">That Drives Predictable Wealth</span>
             </h2>
             <p className="text-charcoal text-base lg:text-lg leading-relaxed">
@@ -89,7 +89,8 @@ export default function About() {
               must always precede technology integration.
             </p>
             <p className="text-charcoal/80 text-base leading-relaxed">
-              Our approach is built entirely on The 3Ps Formula&trade; aligning
+              Our approach is built entirely on The 3P
+              <span className="formula-s">s</span> Formula&trade; aligning
               our three closed architecture modules while introducing the
               proprietary &ldquo;s&rdquo; system upgrade to clear enterprise
               blockages and unlock maximum high speed capacity. Only after
@@ -97,7 +98,7 @@ export default function About() {
               over the keys.
             </p>
 
-            <p className="text-black font-bold text-base tracking-[0.1em] uppercase">
+            <p className="text-black/85 font-bold text-base tracking-[0.1em] uppercase">
               WE BUILD THE ENGINE! YOU DRIVE REVENUE!
             </p>
 

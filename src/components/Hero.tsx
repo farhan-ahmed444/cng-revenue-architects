@@ -186,11 +186,11 @@ export default function Hero() {
 
         <div ref={textRef}>
           <h1 className="hero-line text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight mb-6 max-w-4xl mx-auto">
-            <span className="text-black">Revenue Infrastructure</span>{" "}
+            <span className="text-black/85">Revenue Infrastructure</span>{" "}
             <span className="text-charcoal">Built for</span>{" "}
             <span className="text-accent-gold">Predictable Growth</span>
           </h1>
-          <p className="hero-line text-sm sm:text-base text-black tracking-[0.15em] uppercase mb-3 font-bold">
+          <p className="hero-line text-sm sm:text-base text-black/85 tracking-[0.15em] uppercase mb-3 font-bold">
             WE BUILD THE ENGINE! YOU DRIVE REVENUE!
           </p>
           <p className="hero-line text-base sm:text-lg md:text-xl text-charcoal max-w-2xl mx-auto leading-relaxed mb-6">
@@ -198,7 +198,7 @@ export default function Hero() {
           </p>
 
           <div className="hero-line flex items-center justify-center gap-2 mb-6">
-            <span className="text-xs sm:text-sm tracking-[0.2em] uppercase text-black font-bold">
+            <span className="text-xs sm:text-sm tracking-[0.2em] uppercase text-black/85 font-bold">
               THE 3P<span className="formula-s">s</span> FORMULA&trade;
             </span>
           </div>
@@ -231,7 +231,7 @@ export default function Hero() {
             variant="outline"
             className="text-base px-8 py-4"
           >
-            Explore The 3Ps Formula&trade;
+            Explore The 3P<span className="formula-s">s</span> Formula&trade;
           </MagneticButton>
         </div>
       </div>
