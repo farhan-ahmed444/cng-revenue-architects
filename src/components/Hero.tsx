@@ -198,7 +198,7 @@ export default function Hero() {
           </p>
 
           <div className="hero-line flex items-center justify-center gap-2 mb-6">
-            <span className="text-xs sm:text-sm tracking-[0.2em] uppercase text-black/85 font-bold">
+            <span className="text-xs sm:text-sm tracking-[0.2em] text-black/85 font-bold">
               THE 3P<span className="formula-s">s</span> FORMULA&trade;
             </span>
           </div>

@@ -73,7 +73,7 @@ export default function ServiceTiers() {
             THE 3P<span className="formula-s">s</span> FORMULA&trade;
           </div>
           <h2 className="tiers-heading text-3xl sm:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-tight max-w-4xl mx-auto">
-            <span className="text-black">Engineered</span>{" "}
+            <span className="text-black/85">Engineered</span>{" "}
             <span className="text-charcoal">by Us, Driven</span>{" "}
             <span className="text-accent-gold">by You</span>
           </h2>
@@ -97,9 +97,9 @@ export default function ServiceTiers() {
                   {tier.footer}
                 </div>
                 <h3 className="text-xl font-bold mb-3 leading-tight">
-                  <span className="text-black">The 3P</span>
+                  <span className="text-black/85">The 3P</span>
                   <span className="formula-s">s</span>{" "}
-                  <span className="text-black">{tier.title.replace("The 3Ps ", "")}</span>
+                  <span className="text-black/85">{tier.title.replace("The 3Ps ", "")}</span>
                 </h3>
                 <p className="text-accent-gold text-xs tracking-[0.2em] uppercase font-bold text-center mb-4">
                   {tier.sublabel}
@@ -137,7 +137,7 @@ export default function ServiceTiers() {
               exclusively during our strategic partnership briefing.
             </p>
             <div className="text-lg font-bold tracking-[0.15em] uppercase">
-              <span className="text-black">WE BUILD,</span>{" "}
+              <span className="text-black/85">WE BUILD,</span>{" "}
               <span className="text-accent-gold">YOU DRIVE</span>
             </div>
           </div>
