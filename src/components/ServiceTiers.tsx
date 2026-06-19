@@ -70,7 +70,7 @@ export default function ServiceTiers() {
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-16 lg:mb-20">
           <div className="tiers-label text-accent-gold text-xs tracking-[0.25em] uppercase mb-4 font-medium">
-            THE 3P<span className="formula-s">s</span>{' '}FORMULA&trade;
+            THE 3P<span className="formula-s">s</span>&nbsp;FORMULA&trade;
           </div>
           <h2 className="tiers-heading text-3xl sm:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-tight max-w-4xl mx-auto">
             <span className="text-black/85">Engineered</span>{" "}
@@ -133,7 +133,7 @@ export default function ServiceTiers() {
             </p>
             <p className="text-black/85 text-xs tracking-wider leading-relaxed max-w-2xl mx-auto mb-6">
               *The full operational breakdown and mechanics of The 3P
-              <span className="formula-s">s</span>{' '}Formula&trade; are revealed
+              <span className="formula-s">s</span>&nbsp;Formula&trade; are revealed
               exclusively during our strategic partnership briefing.
             </p>
             <div className="text-lg font-bold tracking-[0.15em] uppercase">
@@ -153,7 +153,7 @@ export default function ServiceTiers() {
             onClick={() => smoothScrollTo("briefing")}
             className="inline-flex items-center gap-2 gold-gradient text-black font-semibold px-7 py-3.5 rounded-lg text-sm hover:shadow-lg hover:shadow-amber-500/25 transition-all duration-300"
           >
-            Request a Briefing to Unlock The 3P<span className="formula-s">s</span>{' '}Formula&trade;
+            Request a Briefing to Unlock The 3P<span className="formula-s">s</span>&nbsp;Formula&trade;
             <ArrowRight size={16} />
           </button>
         </motion.div>

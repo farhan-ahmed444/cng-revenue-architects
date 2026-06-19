@@ -90,7 +90,7 @@ export default function About() {
             </p>
             <p className="text-charcoal/80 text-base leading-relaxed">
               Our approach is built entirely on The 3P
-              <span className="formula-s">s</span>{' '}Formula&trade; aligning
+              <span className="formula-s">s</span>&nbsp;Formula&trade; aligning
               our three closed architecture modules while introducing the
               proprietary &ldquo;s&rdquo; system upgrade to clear enterprise
               blockages and unlock maximum high speed capacity. Only after

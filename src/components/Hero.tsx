@@ -199,7 +199,7 @@ export default function Hero() {
 
           <div className="hero-line flex items-center justify-center gap-2 mb-6">
             <span className="text-xs sm:text-sm tracking-[0.2em] text-black/85 font-bold">
-              THE 3P<span className="formula-s">s</span>{' '}FORMULA&trade;
+              THE 3P<span className="formula-s">s</span>&nbsp;FORMULA&trade;
             </span>
           </div>
 
@@ -231,7 +231,7 @@ export default function Hero() {
             variant="outline"
             className="text-base px-8 py-4"
           >
-            Explore The 3P<span className="formula-s">s</span>{' '}Formula&trade;
+            Explore The 3P<span className="formula-s">s</span>&nbsp;Formula&trade;
           </MagneticButton>
         </div>
       </div>
