@@ -127,14 +127,14 @@ export default function ServiceTiers() {
             <div className="inline-flex items-center gap-2 mb-4">
               <ShieldCheck size={20} className="text-accent-gold" />
               <span className="text-accent-gold text-xs tracking-[0.25em] uppercase font-medium">
-                Rev Arch &ldquo;s&rdquo; System Upgrade
+Rev Arch &ldquo;<span className="formula-s">s</span>&rdquo; System Upgrade
               </span>
             </div>
             <p className="text-charcoal text-base lg:text-lg leading-relaxed mb-3">
               An enterprise can have all three foundational modules and still
               fail to hit full speed due to hidden backend friction. As your
               partner, we diagnose your technical infrastructure for critical
-              leakages and deploy the Rev Arch &ldquo;s&rdquo; System Upgrade to
+              leakages and deploy the Rev Arch &ldquo;<span className="formula-s">s</span>&rdquo; System Upgrade to
               protect your assets and accelerate revenue.
             </p>
             <p className="text-charcoal-mid text-xs tracking-wider leading-relaxed max-w-2xl mx-auto mb-6">

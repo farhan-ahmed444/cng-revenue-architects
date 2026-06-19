@@ -64,7 +64,7 @@ export default function Contact() {
           <p className="contact-heading text-charcoal mt-4 max-w-2xl mx-auto text-sm">
             CnG Revenue Architects, LLC diagnose, build, and align commercial
             infrastructure for firms using three execution tiers, engineered
-            with our Rev Arch &ldquo;s&rdquo; System Upgrade, to deliver
+            with our Rev Arch &ldquo;<span className="formula-s">s</span>&rdquo; System Upgrade, to deliver
             precision-built blueprints, matrices, and diagnoses, so you can
             seamlessly drive scale.
           </p>
