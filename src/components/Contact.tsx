@@ -62,9 +62,11 @@ export default function Contact() {
             <span className="text-accent-gold">Revenue Architect</span>
           </h2>
           <p className="contact-heading text-charcoal mt-4 max-w-2xl mx-auto text-sm">
-            We diagnose, build, and align commercial infrastructure for
-            expanding firms using three execution tiers engineered with our
-            proprietary system upgrade to accelerate enterprise revenue.
+            CnG Revenue Architects, LLC diagnose, build, and align commercial
+            infrastructure for firms using three execution tiers, engineered
+            with our Rev Arch &ldquo;s&rdquo; System Upgrade, to deliver
+            precision-built blueprints, matrices, and diagnoses, so you can
+            seamlessly drive scale.
           </p>
         </div>
 

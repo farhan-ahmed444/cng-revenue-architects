@@ -11,8 +11,8 @@ gsap.registerPlugin(ScrollTrigger);
 
 const metrics = [
   { value: "95%", label: "Client Retention", icon: Target },
-  { value: "$3.2M", label: "AVG. REVENUE ACCELERATION", icon: TrendingUp },
-  { value: "25+ Years", label: "Deploying Revenue Matrix Strategies", icon: Layers },
+  { value: "80%", label: "AVG. REVENUE ACCELERATION", icon: TrendingUp },
+  { value: "25+ Years", label: "Deploying Revenue Strategies", icon: Layers },
 ];
 
 export default function About() {
@@ -77,31 +77,30 @@ export default function About() {
 
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-start">
           <div ref={textRef} className="p-8 rounded-2xl bg-[#2E2E2E] border border-white/[0.06] space-y-6">
-            <h2 className="about-heading text-3xl sm:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-tight">
-              <span className="text-charcoal">We Architect the</span>{" "}
-              <span className="text-black/85">Commercial Infrastructure</span>{" "}
+            <h2 className="about-heading text-3xl sm:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-tight text-center">
+              <span className="text-charcoal">We Architect</span>
+              <br />
+              <span className="text-black/85">The</span>{" "}
+              <span className="text-charcoal">Commercial Infrastructure</span>
+              <br />
               <span className="text-accent-gold">That Drives Predictable Wealth</span>
             </h2>
-            <p className="text-charcoal text-base lg:text-lg leading-relaxed">
-              CnG Revenue Architects, LLC helps enterprises identify deep
-              operational bottlenecks before engineering tailored corporate
-              solutions. We believe that a bulletproof commercial infrastructure
-              must always precede technology integration.
+            <p className="text-charcoal text-base leading-relaxed">
+              CnG Revenue Architects, LLC identifies deep operational
+              bottlenecks before engineering tailored corporate solutions. We
+              believe that a bulletproof commercial infrastructure must always
+              precede technological integrations.
             </p>
-            <p className="text-charcoal/80 text-base leading-relaxed">
-              Our approach is built entirely on The 3P<span className="formula-s">s</span>&nbsp;Formula&trade; aligning
-              our three closed architecture modules while introducing the
-              proprietary &ldquo;s&rdquo; system upgrade to clear enterprise
-              blockages and unlock maximum high speed capacity. Only after
-              establishing this complete architectural foundation do we hand
-              over the keys.
+            <p className="text-charcoal text-base leading-relaxed">
+              Our approach is built entirely on The 3P<span className="formula-s">s</span>&nbsp;FORMULA&trade; by strategically aligning our three closed architecture modules. Rev Arch safeguards the proprietary &ldquo;s&rdquo; system upgrade to reduce enterprise operational risks, using the &ldquo;s&rdquo; system to unlock complex operational waste as a triage to the 3P<span className="formula-s">s</span>&nbsp;FORMULA&trade;. A complete blueprint, matrix, or diagnosis will equip you with the keys to drive revenue growth.
             </p>
 
-            <p className="text-black/85 font-bold text-base tracking-[0.1em] uppercase">
-              WE BUILD THE ENGINE! YOU DRIVE REVENUE!
+            <p className="text-center font-bold text-base tracking-[0.1em] uppercase">
+              <span className="text-accent-gold">WE BUILD THE ENGINE!</span>{" "}
+              <span className="text-black/85">YOU DRIVE REVENUE!</span>
             </p>
 
-            <div>
+            <div className="text-center">
               <motion.button
                 onClick={() => {
                   document

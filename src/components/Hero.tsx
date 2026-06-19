@@ -177,12 +177,15 @@ export default function Hero() {
       <div className="hero-float-2 absolute bottom-[25%] left-[10%] w-16 h-16 border border-accent-gold/10 rounded-full" />
 
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
-        <div className="hero-badge inline-flex items-center gap-2 px-4 py-2 rounded-full border border-accent-gold/30 bg-accent-gold/10 mb-8">
+        <button
+          onClick={() => smoothScrollTo("service-tiers")}
+          className="hero-badge inline-flex items-center gap-2 px-4 py-2 rounded-full border border-accent-gold/30 bg-accent-gold/10 mb-8 hover:bg-accent-gold/20 transition-all duration-300 cursor-pointer"
+        >
           <span className="w-2 h-2 rounded-full bg-accent-gold animate-pulse-glow" />
           <span className="text-accent-gold text-xs tracking-widest uppercase font-medium">
             Revenue Architecture Partners
           </span>
-        </div>
+        </button>
 
         <div ref={textRef}>
           <h1 className="hero-line text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight mb-6 max-w-4xl mx-auto">
@@ -190,29 +193,28 @@ export default function Hero() {
             <span className="text-charcoal">Built for</span>{" "}
             <span className="text-accent-gold">Predictable Growth</span>
           </h1>
-          <p className="hero-line text-sm sm:text-base text-black/85 tracking-[0.15em] uppercase mb-3 font-bold">
+          <p className="hero-line text-base sm:text-lg text-accent-gold tracking-[0.15em] uppercase mb-3 font-bold">
             WE BUILD THE ENGINE! YOU DRIVE REVENUE!
           </p>
           <p className="hero-line text-base sm:text-lg md:text-xl text-charcoal max-w-2xl mx-auto leading-relaxed mb-6">
-            We design, engineer, and optimize enterprises to drive revenue.
+            We design, engineer, and optimize commercial infrastructure!
           </p>
 
-          <div className="hero-line flex items-center justify-center gap-2 mb-6">
-            <span className="text-xs sm:text-sm tracking-[0.2em] text-black/85 font-bold">
+          <div className="hero-line flex items-center justify-center mb-6">
+            <span className="text-sm sm:text-base tracking-[0.2em] text-black/85 font-bold">
               THE 3P<span className="formula-s">s</span>&nbsp;FORMULA&trade;
             </span>
           </div>
 
-          <div className="hero-line flex items-center justify-center gap-6 sm:gap-10 mb-8">
+          <div className="hero-line flex items-center justify-center gap-3 sm:gap-4 mb-8">
             {["Passion", "Expertise", "Prosperity", "Stewardship"].map((item, i) => (
-              <span
-                key={item}
-                className="text-xs sm:text-sm tracking-wide text-charcoal font-bold"
-              >
+              <span key={item} className="flex items-center gap-2 sm:gap-3">
                 {i > 0 && (
-                  <span className="mr-2 sm:mr-3 text-accent-gold">&bull;</span>
+                  <span className="text-accent-gold">&bull;</span>
                 )}
-                {item}
+                <span className="text-xs sm:text-sm tracking-wide text-charcoal font-bold">
+                  {item}
+                </span>
               </span>
             ))}
           </div>
@@ -231,7 +233,7 @@ export default function Hero() {
             variant="outline"
             className="text-base px-8 py-4"
           >
-            Explore The 3P<span className="formula-s">s</span>&nbsp;Formula&trade;
+            Explore The 3P<span className="formula-s">s</span>&nbsp;FORMULA&trade;
           </MagneticButton>
         </div>
       </div>
