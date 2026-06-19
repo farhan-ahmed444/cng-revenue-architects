@@ -70,7 +70,7 @@ export default function ServiceTiers() {
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-16 lg:mb-20">
           <div className="tiers-label text-accent-gold text-xs tracking-[0.25em] uppercase mb-4 font-medium">
-            THE 3P<span className="formula-s">s</span> FORMULA&trade;
+            THE 3P<span className="formula-s">s</span>{' '}FORMULA&trade;
           </div>
           <h2 className="tiers-heading text-3xl sm:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-tight max-w-4xl mx-auto">
             <span className="text-black/85">Engineered</span>{" "}
