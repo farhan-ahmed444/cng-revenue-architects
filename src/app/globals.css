@@ -133,5 +133,5 @@ html:not(.js) [style*="opacity:0"] {
 
 .formula-s {
   color: #F4C430;
-  display: inline-block;
+  text-transform: none;
 }
