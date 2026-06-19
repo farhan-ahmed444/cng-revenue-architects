@@ -157,7 +157,7 @@ export default function ServiceTiers() {
             onClick={() => smoothScrollTo("briefing")}
             className="inline-flex items-center gap-2 bg-[#2A2A2A] text-black font-semibold px-7 py-3.5 rounded-lg text-sm hover:bg-[#333333] transition-all duration-300"
           >
-            Key to Unlock The 3P<span className="formula-s">s</span>&nbsp;FORMULA&trade;
+            Key to Unlock The 3P<span className="formula-s">s</span>&nbsp;Formula
             <ArrowRight size={16} />
           </button>
         </motion.div>
