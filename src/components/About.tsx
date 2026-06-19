@@ -92,7 +92,7 @@ export default function About() {
               precede technological integrations.
             </p>
             <p className="text-charcoal text-base leading-relaxed">
-              Our approach is built entirely on The 3P<span className="formula-s">s</span>&nbsp;FORMULA&trade; by strategically aligning our three closed architecture modules. Rev Arch safeguards the proprietary &ldquo;s&rdquo; system upgrade to reduce enterprise operational risks, using the &ldquo;s&rdquo; system to unlock complex operational waste as a triage to the 3P<span className="formula-s">s</span>&nbsp;FORMULA&trade;. A complete blueprint, matrix, or diagnosis will equip you with the keys to drive revenue growth.
+              Our approach is built entirely on The 3P<span className="formula-s">s</span>&nbsp;FORMULA&trade; by strategically aligning our three closed architecture modules. Rev Arch safeguards the proprietary "s" system upgrade to reduce enterprise operational risks, using the "s" system to unlock complex operational waste as a triage to the 3P<span className="formula-s">s</span>&nbsp;FORMULA&trade;. A complete blueprint, matrix, or diagnosis will equip you with the keys to drive revenue growth.
             </p>
 
             <p className="text-center font-bold text-base tracking-[0.1em] uppercase">
