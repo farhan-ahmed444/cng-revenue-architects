@@ -153,7 +153,7 @@ export default function ServiceTiers() {
             onClick={() => smoothScrollTo("briefing")}
             className="inline-flex items-center gap-2 gold-gradient text-black font-semibold px-7 py-3.5 rounded-lg text-sm hover:shadow-lg hover:shadow-amber-500/25 transition-all duration-300"
           >
-            Request a Briefing to Unlock The 3P<span>s</span> Formula&trade;
+            Request a Briefing to Unlock The 3Ps Formula&trade;
             <ArrowRight size={16} />
           </button>
         </motion.div>
