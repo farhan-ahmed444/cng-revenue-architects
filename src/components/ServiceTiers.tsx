@@ -138,7 +138,7 @@ Rev Arch &ldquo;<span className="formula-s">s</span>&rdquo; System Upgrade
               protect your assets and accelerate revenue.
             </p>
             <p className="text-charcoal-mid text-[15px] tracking-wider leading-relaxed max-w-xl mx-auto mb-6">
-              *The full operational breakdown and mechanics of <span className="text-black/85">The 3Ps Formula</span><br />
+              *The full operational breakdown and mechanics of <span className="text-black/85">The 3P</span><span className="formula-s">s</span><span className="text-black/85"> Formula</span><br />
               are revealed exclusively during our strategic partnership briefing.
             </p>
             <div className="text-lg font-bold tracking-[0.15em] uppercase">
