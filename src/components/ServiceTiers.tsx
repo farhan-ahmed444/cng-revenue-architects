@@ -132,8 +132,7 @@ export default function ServiceTiers() {
               performance.
             </p>
             <p className="text-black/85 text-xs tracking-wider leading-relaxed max-w-2xl mx-auto mb-6">
-              *The full operational breakdown and mechanics of The 3P
-              <span className="formula-s">s</span>&nbsp;Formula&trade; are revealed
+              *The full operational breakdown and mechanics of The 3P<span className="formula-s">s</span>&nbsp;Formula&trade; are revealed
               exclusively during our strategic partnership briefing.
             </p>
             <div className="text-lg font-bold tracking-[0.15em] uppercase">
