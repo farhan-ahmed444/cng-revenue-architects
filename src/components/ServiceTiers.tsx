@@ -137,8 +137,9 @@ Rev Arch &ldquo;<span className="formula-s">s</span>&rdquo; System Upgrade
               leakages and deploy the Rev Arch &ldquo;<span className="formula-s">s</span>&rdquo; System Upgrade to
               protect your assets and accelerate revenue.
             </p>
-            <p className="text-charcoal-mid text-xs tracking-wider leading-relaxed max-w-2xl mx-auto mb-6">
-              *The full operational breakdown and mechanics of The 3P<span className="formula-s">s</span>&nbsp;FORMULA&trade; are revealed exclusively during our strategic partnership briefing.
+            <p className="text-charcoal-mid text-xs tracking-wider leading-relaxed max-w-xl mx-auto mb-6">
+              *The full operational breakdown and mechanics of <span className="text-black/85">The 3Ps FORMULA&trade;</span><br />
+              are revealed exclusively during our strategic partnership briefing.
             </p>
             <div className="text-lg font-bold tracking-[0.15em] uppercase">
               <span className="text-black/85">WE BUILD!</span>{" "}
@@ -155,7 +156,7 @@ Rev Arch &ldquo;<span className="formula-s">s</span>&rdquo; System Upgrade
         >
           <button
             onClick={() => smoothScrollTo("briefing")}
-            className="inline-flex items-center gap-2 bg-[#2A2A2A] text-black font-semibold px-7 py-3.5 rounded-lg text-sm hover:bg-[#333333] transition-all duration-300"
+            className="inline-flex items-center gap-0.5 bg-[#2A2A2A] text-black font-semibold px-7 py-3.5 rounded-lg text-sm hover:bg-[#333333] transition-all duration-300"
           >
             Key to Unlock The 3P<span className="formula-s">s</span>&nbsp;Formula
             <ArrowRight size={16} />
