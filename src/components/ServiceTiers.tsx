@@ -97,8 +97,7 @@ export default function ServiceTiers() {
                   {tier.footer}
                 </div>
                 <h3 className="text-xl font-bold mb-3 leading-tight">
-                  <span className="text-black/85">The 3P</span>
-                  <span className="formula-s">s</span>{" "}
+                  <span className="text-black/85">The 3P</span><span className="formula-s">s</span>{" "}
                   <span className="text-black/85">{tier.title.replace("The 3Ps ", "")}</span>
                 </h3>
                 <p className="text-accent-gold text-xs tracking-[0.2em] uppercase font-bold text-center mb-4">
