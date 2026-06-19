@@ -54,7 +54,7 @@ export default function About() {
           src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=1920&q=80"
           alt="Corporate strategy meeting"
           fill
-          className="object-cover opacity-[0.12]"
+          className="object-cover opacity-[0.22]"
           sizes="100vw"
         />
       </div>
@@ -76,7 +76,7 @@ export default function About() {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-start">
-          <div ref={textRef} className="p-8 rounded-2xl bg-[#252525] border border-white/[0.06] space-y-6">
+          <div ref={textRef} className="p-8 rounded-2xl bg-[#2E2E2E] border border-white/[0.06] space-y-6">
             <h2 className="about-heading text-3xl sm:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-tight">
               <span className="text-charcoal">We Architect the</span>{" "}
               <span className="text-black/85">Commercial Infrastructure</span>{" "}
@@ -90,7 +90,7 @@ export default function About() {
             </p>
             <p className="text-charcoal/80 text-base leading-relaxed">
               Our approach is built entirely on The 3P
-              <span className="formula-s">s</span> Formula&trade; aligning
+              <span className="formula-s">s</span>{' '}Formula&trade; aligning
               our three closed architecture modules while introducing the
               proprietary &ldquo;s&rdquo; system upgrade to clear enterprise
               blockages and unlock maximum high speed capacity. Only after

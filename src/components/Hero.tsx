@@ -168,7 +168,7 @@ export default function Hero() {
         className="absolute inset-0 z-[2] opacity-20 grid-pattern animate-grid-scroll"
       />
 
-      <div className="absolute inset-0 z-[3] bg-gradient-to-b from-black/20 via-black/10 to-black/50" />
+      <div className="absolute inset-0 z-[3] bg-gradient-to-b from-black/10 via-black/5 to-black/30" />
 
       <div className="absolute top-1/4 left-1/3 w-96 h-96 rounded-full bg-accent-gold/10 blur-[120px]" />
       <div className="absolute bottom-1/4 right-1/4 w-64 h-64 rounded-full bg-accent-amber/8 blur-[100px]" />
@@ -199,7 +199,7 @@ export default function Hero() {
 
           <div className="hero-line flex items-center justify-center gap-2 mb-6">
             <span className="text-xs sm:text-sm tracking-[0.2em] text-black/85 font-bold">
-              THE 3P<span className="formula-s">s</span> FORMULA&trade;
+              THE 3P<span className="formula-s">s</span>{' '}FORMULA&trade;
             </span>
           </div>
 
@@ -231,7 +231,7 @@ export default function Hero() {
             variant="outline"
             className="text-base px-8 py-4"
           >
-            Explore The 3P<span className="formula-s">s</span> Formula&trade;
+            Explore The 3P<span className="formula-s">s</span>{' '}Formula&trade;
           </MagneticButton>
         </div>
       </div>

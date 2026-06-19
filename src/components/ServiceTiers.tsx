@@ -83,7 +83,7 @@ export default function ServiceTiers() {
           {tiers.map((tier, idx) => (
             <motion.div
               key={tier.title}
-                className="group relative overflow-hidden rounded-2xl border border-white/[0.06] bg-[#222222] hover:border-accent-gold/30 transition-all duration-500 p-6 lg:p-8 flex flex-col"
+                className="group relative overflow-hidden rounded-2xl border border-white/[0.06] bg-[#2A2A2A] hover:border-accent-gold/30 transition-all duration-500 p-6 lg:p-8 flex flex-col"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -114,7 +114,7 @@ export default function ServiceTiers() {
           ))}
         </div>
 
-        <div className="mt-16 lg:mt-20 p-8 lg:p-12 rounded-2xl bg-[#1E1E1E] border border-white/[0.06] relative overflow-hidden">
+        <div className="mt-16 lg:mt-20 p-8 lg:p-12 rounded-2xl bg-[#282828] border border-white/[0.06] relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-r from-accent-gold/[0.02] to-transparent" />
           <div className="relative z-10 text-center max-w-4xl mx-auto">
             <div className="inline-flex items-center gap-2 mb-4">
@@ -133,7 +133,7 @@ export default function ServiceTiers() {
             </p>
             <p className="text-black/85 text-xs tracking-wider leading-relaxed max-w-2xl mx-auto mb-6">
               *The full operational breakdown and mechanics of The 3P
-              <span className="formula-s">s</span> Formula&trade; are revealed
+              <span className="formula-s">s</span>{' '}Formula&trade; are revealed
               exclusively during our strategic partnership briefing.
             </p>
             <div className="text-lg font-bold tracking-[0.15em] uppercase">
@@ -153,7 +153,7 @@ export default function ServiceTiers() {
             onClick={() => smoothScrollTo("briefing")}
             className="inline-flex items-center gap-2 gold-gradient text-black font-semibold px-7 py-3.5 rounded-lg text-sm hover:shadow-lg hover:shadow-amber-500/25 transition-all duration-300"
           >
-            Request a Briefing to Unlock The 3P<span className="formula-s">s</span> Formula&trade;
+            Request a Briefing to Unlock The 3P<span className="formula-s">s</span>{' '}Formula&trade;
             <ArrowRight size={16} />
           </button>
         </motion.div>

@@ -41,7 +41,7 @@ export default function MagneticButton({
     ghost:
       "text-charcoal hover:text-accent-gold",
     outline:
-      "border border-accent-gold/60 text-black hover:bg-accent-gold/10 hover:border-accent-gold",
+      "bg-[#2A2A2A] border border-accent-gold/60 text-black hover:bg-[#333333] hover:border-accent-gold",
   };
 
   const Tag = href ? "a" : "button";

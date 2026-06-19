@@ -52,7 +52,7 @@ export default function Contact() {
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-accent-gold/20 to-transparent" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="text-center mb-16 max-w-4xl mx-auto p-8 rounded-2xl bg-[#222222] border border-white/[0.06]">
+        <div className="text-center mb-16 max-w-4xl mx-auto p-8 rounded-2xl bg-[#2A2A2A] border border-white/[0.06]">
           <div className="contact-label text-accent-gold text-xs tracking-[0.25em] uppercase mb-4 font-medium">
             Executive Briefing
           </div>
