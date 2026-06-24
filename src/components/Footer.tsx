@@ -46,39 +46,38 @@ export default function Footer() {
           </p>
         </div>
 
-        <div className="flex flex-col sm:flex-row justify-center gap-12 lg:gap-20 mb-10">
-          <div className="text-center sm:text-left">
+        <div className="flex flex-col items-center gap-8 mb-10">
+          <div className="text-center">
             <h4 className="text-accent-gold text-xs tracking-widest uppercase mb-4 font-medium">
               Navigate
             </h4>
-            <ul className="space-y-2.5">
+            <div className="flex flex-wrap justify-center gap-x-6 gap-y-2">
               {footerLinks.map((link) => (
-                <li key={link.label}>
-                  <button
-                    onClick={() => smoothScrollTo(link.target)}
-                    className="text-charcoal text-sm hover:text-accent-gold transition-colors duration-300"
-                  >
-                    {link.label}
-                  </button>
-                </li>
+                <button
+                  key={link.label}
+                  onClick={() => smoothScrollTo(link.target)}
+                  className="text-charcoal text-sm hover:text-accent-gold transition-colors duration-300"
+                >
+                  {link.label}
+                </button>
               ))}
-            </ul>
+            </div>
           </div>
 
-          <div className="text-center sm:text-left">
+          <div className="text-center">
             <h4 className="text-accent-gold text-xs tracking-widest uppercase mb-4 font-medium">
               Core Values
             </h4>
-            <ul className="space-y-2">
+            <div className="flex flex-wrap justify-center gap-x-6 gap-y-2">
               {coreValues.map((val) => (
-                <li
+                <span
                   key={val}
                   className="text-charcoal text-sm font-bold"
                 >
                   {val}
-                </li>
+                </span>
               ))}
-            </ul>
+            </div>
           </div>
         </div>
 
