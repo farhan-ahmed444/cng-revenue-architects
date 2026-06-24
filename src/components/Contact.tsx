@@ -10,9 +10,9 @@ import LinkedInIcon from "@/components/LinkedInIcon";
 gsap.registerPlugin(ScrollTrigger);
 
 const growthPhases = [
-  "Concept / Market Entry",
-  "Active Expansion / Scaling Infrastructure",
-  "Stagnant Velocity / Hitting a Revenue Ceiling",
+  "LAUNCHING A BRAND, INCEPTION STAGE (Tier 1 Foundational Blueprints)",
+  "SCALING A FIRM, TRACTION STAGE (Tier 2 Matrices)",
+  "EXISITING REVENUE, CURRENTLY STALLED (Tier 3 Diagnostic Audits)",
 ];
 
 export default function Contact() {
@@ -52,14 +52,14 @@ export default function Contact() {
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-accent-gold/20 to-transparent" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="text-center mb-16 max-w-4xl mx-auto p-8 rounded-2xl bg-[#2A2A2A] border border-white/[0.06]">
-          <div className="contact-label text-accent-gold text-xs tracking-[0.25em] uppercase mb-4 font-medium">
+        <div className="text-center mb-16 max-w-4xl mx-auto p-8 rounded-2xl bg-[#363636] border border-white/[0.06]">
+          <div className="contact-label inline-block bg-[#222222] px-4 py-2 rounded-full text-accent-gold text-xs tracking-[0.25em] uppercase mb-4 font-medium">
             Executive Briefing
           </div>
           <h2 className="contact-heading text-3xl sm:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-tight max-w-4xl mx-auto">
             <span className="text-charcoal">Secure Your</span>{" "}
             <span className="text-black">Partnership with the</span>{" "}
-            <span className="text-accent-gold">Revenue Architect</span>
+            <span className="text-accent-gold">Revenue Architects</span>
           </h2>
           <p className="contact-heading text-charcoal mt-4 max-w-2xl mx-auto text-sm">
             CnG Revenue Architects, LLC diagnose, build, and align commercial
@@ -81,11 +81,22 @@ export default function Contact() {
             <form className="space-y-5">
               <div>
                 <label className="block text-xs tracking-wider uppercase text-charcoal mb-2">
-                  Full Name &amp; Executive Title
+                  Full Name
                 </label>
                 <input
                   type="text"
-                  placeholder="e.g. John Smith, CEO"
+                  placeholder="e.g. John Smith"
+                  className="w-full px-4 py-3 bg-white/[0.04] border border-white/[0.08] rounded-lg text-charcoal text-sm placeholder:text-charcoal-mid/40 focus:outline-none focus:border-accent-gold/40 transition-colors duration-300"
+                />
+              </div>
+
+              <div>
+                <label className="block text-xs tracking-wider uppercase text-charcoal mb-2">
+                  Executive Title
+                </label>
+                <input
+                  type="text"
+                  placeholder="e.g. CEO"
                   className="w-full px-4 py-3 bg-white/[0.04] border border-white/[0.08] rounded-lg text-charcoal text-sm placeholder:text-charcoal-mid/40 focus:outline-none focus:border-accent-gold/40 transition-colors duration-300"
                 />
               </div>

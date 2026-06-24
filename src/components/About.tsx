@@ -71,17 +71,16 @@ export default function About() {
       <div className="absolute top-0 left-1/2 w-px h-full bg-gradient-to-b from-transparent via-accent-gold/10 to-transparent hidden lg:block" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="about-label text-accent-gold text-xs tracking-[0.25em] uppercase mb-4 font-medium">
+        <div className="about-label inline-block bg-[#222222] px-4 py-2 rounded-full text-accent-gold text-xs tracking-[0.25em] uppercase mb-4 font-medium">
           About the Firm
         </div>
 
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-start">
-          <div ref={textRef} className="p-8 rounded-2xl bg-[#2E2E2E] border border-white/[0.06] space-y-6">
+          <div ref={textRef} className="p-8 rounded-2xl bg-[#3A3A3A] border border-white/[0.06] space-y-6">
             <h2 className="about-heading text-3xl sm:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-tight text-center">
               <span className="text-charcoal">We Architect</span>
               <br />
-              <span className="text-black/85">The</span>{" "}
-              <span className="text-charcoal">Commercial Infrastructure</span>
+              <span className="text-charcoal">The Commercial Infrastructure</span>
               <br />
               <span className="text-accent-gold">That Drives Predictable Wealth</span>
             </h2>
@@ -92,7 +91,7 @@ export default function About() {
               precede technological integrations.
             </p>
             <p className="text-charcoal text-base leading-relaxed">
-              Our approach is built entirely on The 3P<span className="formula-s">s</span>&nbsp;FORMULA&trade; by strategically aligning our three closed architecture modules. Rev Arch safeguards the proprietary "<span className="formula-s">s</span>" system upgrade to reduce enterprise operational risks, using the "<span className="formula-s">s</span>" system to unlock complex operational waste as a triage to the 3P<span className="formula-s">s</span>&nbsp;FORMULA&trade;. A complete blueprint, matrix, or diagnosis will equip you with the keys to drive revenue growth.
+              Our approach is built entirely on THE 3P<span className="formula-s">s</span>&nbsp;FORMULA&trade; by strategically aligning our three closed architecture modules. CnG Revenue Architects complete blueprint, matrix, or diagnosis will equip you with the keys to DRIVE REVENUE growth!
             </p>
 
             <p className="text-center font-bold text-base tracking-[0.1em] uppercase">

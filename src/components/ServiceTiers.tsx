@@ -13,7 +13,7 @@ const tiers = [
   {
     title: "The 3Ps Revenue Blueprint",
     sublabel: "Looking for a Business in a Box",
-    body: "We provide the macro structural engineering plans to construct a highly profitable, scalable revenue engine from the ground up. Designed exclusively for new business concepts and market entries.",
+    body: "We provide the macro structural engineering plans to construct a highly profitable, scalable revenue engine from the ground up.",
     footer: "Tier 1",
   },
   {
@@ -25,9 +25,9 @@ const tiers = [
   },
   {
     title: "The 3Ps Diagnostic Audit",
-    sublabel1: "EXISTING BUSINESS,",
-    sublabel2: "HITTING A CEILING",
-    body: "We step in as your corporate physician to perform a forensic, top-to-bottom operational review. We insulate hidden obstructions to restore predictable stability at maximum velocity.",
+    sublabel1: "EXISTING REVENUE,",
+    sublabel2: "CURRENTLY STALLED",
+    body: "We step in as your corporate physician to perform a forensic, top-to-bottom operational review.",
     footer: "Tier 3",
   },
 ];
@@ -71,7 +71,7 @@ export default function ServiceTiers() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-16 lg:mb-20">
-          <div className="tiers-label text-accent-gold text-xs tracking-[0.25em] uppercase mb-4 font-medium">
+          <div className="tiers-label inline-block bg-[#222222] px-4 py-2 rounded-full text-accent-gold text-xs tracking-[0.25em] uppercase mb-4 font-medium">
             THE 3P<span className="formula-s">s</span>&nbsp;FORMULA&trade;
           </div>
           <h2 className="tiers-heading text-3xl sm:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-tight max-w-4xl mx-auto">
@@ -84,7 +84,7 @@ export default function ServiceTiers() {
           {tiers.map((tier, idx) => (
             <motion.div
               key={tier.title}
-                className="group relative overflow-hidden rounded-2xl border border-white/[0.06] bg-[#2A2A2A] hover:border-accent-gold/30 transition-all duration-500 p-6 lg:p-8 flex flex-col"
+                className="group relative overflow-hidden rounded-2xl border border-white/[0.06] bg-[#363636] hover:border-accent-gold/30 transition-all duration-500 p-6 lg:p-8 flex flex-col"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -98,7 +98,7 @@ export default function ServiceTiers() {
                   {tier.footer}
                 </div>
                 <h3 className="text-xl font-bold mb-3 leading-tight text-center">
-                  <span className="text-black/85">The 3P</span><span className="formula-s">s</span>{" "}
+                  <span className="text-black/85">The 3P</span><span className="formula-s">s</span><br />
                   <span className="text-black/85">{tier.title.replace("The 3Ps ", "")}</span>
                 </h3>
                 <div className="text-accent-gold text-xs tracking-[0.2em] uppercase font-bold text-center mb-4">
@@ -121,7 +121,7 @@ export default function ServiceTiers() {
           ))}
         </div>
 
-        <div className="mt-16 lg:mt-20 p-8 lg:p-12 rounded-2xl bg-[#282828] border border-white/[0.06] relative overflow-hidden">
+        <div className="mt-16 lg:mt-20 p-8 lg:p-12 rounded-2xl bg-[#333333] border border-white/[0.06] relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-r from-accent-gold/[0.02] to-transparent" />
           <div className="relative z-10 text-center max-w-4xl mx-auto">
             <div className="inline-flex items-center gap-2 mb-4">
@@ -138,8 +138,8 @@ Rev Arch &ldquo;<span className="formula-s">s</span>&rdquo; System Upgrade
               protect your assets and accelerate revenue.
             </p>
             <p className="text-charcoal-mid text-[15px] tracking-wider leading-relaxed max-w-xl mx-auto mb-6">
-              *The full operational breakdown and mechanics of <span className="text-black/85">The 3P</span><span className="formula-s">s</span><span className="text-black/85"> Formula</span><br />
-              are revealed exclusively during our strategic partnership briefing.
+              *The full operational breakdown and mechanics of <span className="text-black/85">THE 3P</span><span className="formula-s">s</span><span className="text-black/85">&nbsp;FORMULA&trade;</span><br />
+              are revealed during our strategic partnership briefing.
             </p>
             <div className="text-lg font-bold tracking-[0.15em] uppercase">
               <span className="text-black/85">WE BUILD!</span>{" "}
@@ -158,7 +158,7 @@ Rev Arch &ldquo;<span className="formula-s">s</span>&rdquo; System Upgrade
             onClick={() => smoothScrollTo("briefing")}
             className="inline-flex items-center gap-0.5 bg-[#2A2A2A] text-black font-semibold px-7 py-3.5 rounded-lg text-sm hover:bg-[#333333] transition-all duration-300"
           >
-            Key to Unlock The 3P<span className="formula-s">s</span>&nbsp;Formula
+            Key to Unlock THE 3P<span className="formula-s">s</span>&nbsp;FORMULA&trade;
             <ArrowRight size={16} />
           </button>
         </motion.div>

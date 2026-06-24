@@ -153,7 +153,7 @@ export default function Hero() {
           muted
           loop
           playsInline
-          className="absolute inset-0 w-full h-full object-cover opacity-55"
+          className="absolute inset-0 w-full h-full object-cover opacity-70"
           poster="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80"
         >
           <source
@@ -168,7 +168,7 @@ export default function Hero() {
         className="absolute inset-0 z-[2] opacity-20 grid-pattern animate-grid-scroll"
       />
 
-      <div className="absolute inset-0 z-[3] bg-gradient-to-b from-black/10 via-black/5 to-black/30" />
+      <div className="absolute inset-0 z-[3] bg-gradient-to-b from-black/5 via-black/3 to-black/15" />
 
       <div className="absolute top-1/4 left-1/3 w-96 h-96 rounded-full bg-accent-gold/10 blur-[120px]" />
       <div className="absolute bottom-1/4 right-1/4 w-64 h-64 rounded-full bg-accent-amber/8 blur-[100px]" />
@@ -190,18 +190,18 @@ export default function Hero() {
         <div ref={textRef}>
           <h1 className="hero-line text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight mb-6 max-w-4xl mx-auto">
             <span className="text-black/85">Revenue Infrastructure</span>{" "}
-            <span className="text-charcoal">Built for</span>{" "}
+            <span className="text-black/85">Built for</span>{" "}
             <span className="text-accent-gold">Predictable Growth</span>
           </h1>
           <p className="hero-line text-base sm:text-lg text-accent-gold tracking-[0.15em] uppercase mb-3 font-bold">
             WE BUILD THE ENGINE! YOU DRIVE REVENUE!
           </p>
-          <p className="hero-line text-base sm:text-lg md:text-xl text-charcoal max-w-2xl mx-auto leading-relaxed mb-6">
+          <p className="hero-line text-base sm:text-lg md:text-xl text-black/85 max-w-2xl mx-auto leading-relaxed mb-6">
             We design, engineer, and optimize commercial infrastructure!
           </p>
 
           <div className="hero-line flex items-center justify-center mb-6">
-            <span className="text-sm sm:text-base tracking-[0.2em] text-black/85 font-bold">
+            <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight text-black/85">
               THE 3P<span className="formula-s">s</span>&nbsp;FORMULA&trade;
             </span>
           </div>
@@ -231,9 +231,9 @@ export default function Hero() {
           <MagneticButton
             onClick={() => smoothScrollTo("service-tiers")}
             variant="outline"
-            className="text-base px-8 py-4"
+            className="text-base px-8 py-4 !bg-[#555555] hover:!bg-[#666666]"
           >
-            Explore The 3P<span className="formula-s">s</span>&nbsp;FORMULA&trade;
+            Explore THE 3P<span className="formula-s">s</span>&nbsp;FORMULA&trade;
           </MagneticButton>
         </div>
       </div>
