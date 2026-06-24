@@ -46,8 +46,8 @@ export default function Footer() {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
-          <div className="sm:col-span-2 lg:col-span-2">
+        <div className="flex flex-col sm:flex-row justify-center gap-12 lg:gap-20 mb-10">
+          <div className="text-center sm:text-left">
             <h4 className="text-accent-gold text-xs tracking-widest uppercase mb-4 font-medium">
               Navigate
             </h4>
@@ -65,7 +65,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div>
+          <div className="text-center sm:text-left">
             <h4 className="text-accent-gold text-xs tracking-widest uppercase mb-4 font-medium">
               Core Values
             </h4>
