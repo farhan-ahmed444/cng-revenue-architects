@@ -196,7 +196,7 @@ export default function Hero() {
           <p className="hero-line text-base sm:text-lg text-accent-gold tracking-[0.15em] uppercase mb-3 font-bold">
             WE BUILD THE ENGINE! YOU DRIVE REVENUE!
           </p>
-          <p className="hero-line text-base sm:text-lg md:text-xl text-black/85 max-w-2xl mx-auto leading-relaxed mb-6">
+          <p className="hero-line text-base sm:text-lg md:text-xl text-black/85 font-bold max-w-2xl mx-auto leading-relaxed mb-6">
             We design, engineer, and optimize commercial infrastructure!
           </p>
 
@@ -212,7 +212,7 @@ export default function Hero() {
                 {i > 0 && (
                   <span className="text-accent-gold">&bull;</span>
                 )}
-                <span className="text-xs sm:text-sm tracking-wide text-charcoal font-bold">
+                <span className="text-xs sm:text-sm tracking-wide text-black/85 font-bold">
                   {item}
                 </span>
               </span>
