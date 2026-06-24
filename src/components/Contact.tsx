@@ -215,10 +215,10 @@ export default function Contact() {
                     Email
                   </h4>
                   <a
-                    href="mailto:acalhoun@cngrevenuearchitects.com"
+                    href="mailto:info@cngrevenuearchitects.com"
                     className="text-charcoal/70 text-sm hover:text-accent-gold transition-colors duration-300"
                   >
-                    acalhoun@cngrevenuearchitects.com
+                    info@cngrevenuearchitects.com
                   </a>
                 </div>
               </div>
