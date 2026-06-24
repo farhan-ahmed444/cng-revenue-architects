@@ -91,7 +91,7 @@ export default function About() {
               precede technological integrations.
             </p>
             <p className="text-charcoal text-base leading-relaxed">
-              Our approach is built entirely on THE 3P<span className="formula-s">s</span>&nbsp;FORMULA&trade; by strategically aligning our three closed architecture modules. CnG Revenue Architects complete blueprint, matrix, or diagnosis will equip you with the keys to DRIVE REVENUE growth!
+              Our approach is built entirely on <span className="text-black/85">THE 3P</span><span className="formula-s">s</span><span className="text-black/85">&nbsp;FORMULA&trade;</span> by strategically aligning our three closed architecture modules. CnG Revenue Architects complete blueprint, matrix, or diagnosis will equip you with the keys to DRIVE REVENUE growth!
             </p>
 
             <p className="text-center font-bold text-base tracking-[0.1em] uppercase">
