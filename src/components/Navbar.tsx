@@ -61,12 +61,9 @@ export default function Navbar() {
               onClick={() => handleNav("Home")}
               className="flex items-center gap-2 group"
             >
-              <div className="w-10 h-10 flex items-center justify-center">
-                <Image src="/logo.png" alt="CnG Revenue Architects" width={40} height={40} className="object-contain" />
+              <div className="w-12 h-12 flex items-center justify-center">
+                <Image src="/logo.png" alt="CnG Revenue Architects" width={48} height={48} className="object-contain" />
               </div>
-              <span className="text-accent-gold font-semibold text-sm lg:text-base">
-                CnG<span className="text-accent-gold">_</span>
-              </span>
             </button>
 
             <div className="hidden md:flex items-center gap-8">
