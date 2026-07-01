@@ -60,7 +60,7 @@ export default function Navbar() {
               onClick={() => handleNav("Home")}
               className="flex items-center"
             >
-              <img src="/logo.png" alt="CnG Revenue Architects" width={192} height={192} className="object-contain" style={{ maxWidth: '192px', maxHeight: '192px' }} />
+              <img src="/logo2.png" alt="CnG Revenue Architects" width={192} height={192} className="object-contain" style={{ maxWidth: '192px', maxHeight: '192px' }} />
             </button>
 
             <div className="hidden md:flex items-center gap-8">
