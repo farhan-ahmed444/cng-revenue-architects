@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 import LinkedInIcon from "@/components/LinkedInIcon";
 import { smoothScrollTo } from "@/lib/utils";
 
@@ -60,8 +61,8 @@ export default function Navbar() {
               onClick={() => handleNav("Home")}
               className="flex items-center gap-2 group"
             >
-              <div className="w-8 h-8 gold-gradient rounded-lg flex items-center justify-center">
-                <span className="text-black font-bold text-sm">C</span>
+              <div className="w-8 h-8 gold-gradient rounded-lg flex items-center justify-center overflow-hidden">
+                <Image src="/logo.png" alt="CnG Revenue Architects" width={32} height={32} className="object-contain" />
               </div>
               <span className="text-accent-gold font-semibold text-sm lg:text-base tracking-tight">
                 CnG<span className="text-accent-gold">_</span>

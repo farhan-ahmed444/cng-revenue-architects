@@ -1,6 +1,7 @@
 "use client";
 
 import LinkedInIcon from "@/components/LinkedInIcon";
+import Image from "next/image";
 import { smoothScrollTo } from "@/lib/utils";
 
 const footerLinks = [
@@ -20,8 +21,8 @@ export default function Footer() {
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-12 lg:py-16">
         <div className="text-center mb-10">
           <div className="flex items-center justify-center gap-2 mb-3">
-            <div className="w-8 h-8 gold-gradient rounded-lg flex items-center justify-center">
-              <span className="text-black font-bold text-sm">C</span>
+            <div className="w-8 h-8 gold-gradient rounded-lg flex items-center justify-center overflow-hidden">
+              <Image src="/logo.png" alt="CnG Revenue Architects" width={32} height={32} className="object-contain" />
             </div>
             <span className="text-accent-gold font-semibold text-base tracking-tight">
               CnG Revenue Architects, LLC
