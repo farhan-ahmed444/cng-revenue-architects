@@ -21,10 +21,10 @@ export default function Footer() {
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-12 lg:py-16">
         <div className="text-center mb-10">
           <div className="flex items-center justify-center gap-2 mb-3">
-            <div className="w-8 h-8 gold-gradient rounded-lg flex items-center justify-center overflow-hidden">
-              <Image src="/logo.png" alt="CnG Revenue Architects" width={32} height={32} className="object-contain" />
+            <div className="w-10 h-10 flex items-center justify-center">
+              <Image src="/logo.png" alt="CnG Revenue Architects" width={40} height={40} className="object-contain" />
             </div>
-            <span className="text-accent-gold font-semibold text-base tracking-tight">
+            <span className="text-accent-gold font-semibold text-base">
               CnG Revenue Architects, LLC
             </span>
           </div>
