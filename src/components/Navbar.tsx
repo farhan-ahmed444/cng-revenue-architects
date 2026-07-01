@@ -59,10 +59,10 @@ export default function Navbar() {
           <div className="flex items-center justify-between h-16 lg:h-20">
             <button
               onClick={() => handleNav("Home")}
-              className="flex items-center gap-2 group"
+              className="flex items-center"
             >
-              <div className="w-12 h-12 flex items-center justify-center">
-                <Image src="/logo.png" alt="CnG Revenue Architects" width={48} height={48} className="object-contain" />
+              <div className="w-20 h-20 flex items-center justify-center">
+                <Image src="/logo.png" alt="CnG Revenue Architects" width={80} height={80} className="object-contain" />
               </div>
             </button>
 

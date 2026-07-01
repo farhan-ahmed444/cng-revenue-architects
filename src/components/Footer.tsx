@@ -21,9 +21,7 @@ export default function Footer() {
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-12 lg:py-16">
         <div className="text-center mb-10">
           <div className="flex items-center justify-center mb-3">
-            <div className="w-12 h-12 flex items-center justify-center">
-              <Image src="/logo.png" alt="CnG Revenue Architects" width={48} height={48} className="object-contain" />
-            </div>
+            <Image src="/logo.png" alt="CnG Revenue Architects" width={192} height={192} className="object-contain" />
           </div>
           <p className="text-accent-gold text-sm mb-2 font-bold tracking-[0.08em]">
             WE BUILD THE ENGINE! YOU DRIVE REVENUE!
