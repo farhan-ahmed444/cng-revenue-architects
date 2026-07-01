@@ -190,7 +190,7 @@ export default function Hero() {
         <div ref={textRef}>
           <h1 className="hero-line text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight mb-6 max-w-4xl mx-auto">
             <span className="text-black/85">Revenue Infrastructure</span>{" "}
-            <span className="text-black/85">Built for</span>{" "}
+            <span className="text-accent-gold">Built for</span>{" "}
             <span className="text-accent-gold">Predictable Growth</span>
           </h1>
           <p className="hero-line text-base sm:text-lg text-accent-gold tracking-[0.15em] uppercase mb-3 font-bold">

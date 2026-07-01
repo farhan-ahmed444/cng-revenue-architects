@@ -25,8 +25,7 @@ const tiers = [
   },
   {
     title: "The 3Ps Diagnostic Audit",
-    sublabel1: "EXISTING REVENUE,",
-    sublabel2: "CURRENTLY STALLED",
+    sublabel: "EXISTING REVENUE, CURRENTLY STALLED",
     body: "We step in as your corporate physician to perform a forensic, top-to-bottom operational review.",
     footer: "Tier 3",
   },
@@ -101,7 +100,7 @@ export default function ServiceTiers() {
                   <span className="text-black/85">The 3P</span><span className="formula-s">s</span><br />
                   <span className="text-black/85">{tier.title.replace("The 3Ps ", "")}</span>
                 </h3>
-                <div className="text-accent-gold text-xs tracking-[0.2em] uppercase font-bold text-center mb-4">
+                <div className="text-accent-gold text-xs tracking-[0.2em] uppercase font-bold text-center mb-4 gold-glow">
                   {tier.sublabel1 && tier.sublabel2 ? (
                     <>
                       <div>{tier.sublabel1}</div>
