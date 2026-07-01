@@ -3,7 +3,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import Image from "next/image";
 import LinkedInIcon from "@/components/LinkedInIcon";
 import { smoothScrollTo } from "@/lib/utils";
 
@@ -61,9 +60,7 @@ export default function Navbar() {
               onClick={() => handleNav("Home")}
               className="flex items-center"
             >
-              <div className="w-20 h-20 flex items-center justify-center">
-                <Image src="/logo.png" alt="CnG Revenue Architects" width={80} height={80} className="object-contain" />
-              </div>
+              <img src="/logo.png" alt="CnG Revenue Architects" width={192} height={192} className="object-contain" style={{ maxWidth: '192px', maxHeight: '192px' }} />
             </button>
 
             <div className="hidden md:flex items-center gap-8">
